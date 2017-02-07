@@ -19,8 +19,9 @@ $mail->addAddress('anjalic@bsf.io');
 
 //$mail->isHTML(true);  
 
+// This is the simple email sent from localhost using PHP
 
-$bodyContent = 'This is the simple email sent from localhost using PHP ';
+$bodyContent = 'This is the simple email sent from localhost using PHP';
 
 $mail->Subject = 'Email from Localhost';
 $mail->Body    = $bodyContent;
