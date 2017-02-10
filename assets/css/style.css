@@ -1,0 +1,72 @@
+body {
+	font-family: 'Titillium Web', sans-serif;
+	background-color: powderblue;
+}
+
+.wrap {
+    width: 340px;
+    margin: auto;
+    background: #8bd3de;
+}
+
+.heading > h1 {
+    font-size: 40px;
+    text-align: center;
+    
+
+}
+
+.heading > p {
+	font-family: 'Fira Sans Extra Condensed', sans-serif;
+    text-align: center;
+    font-size: smaller;
+
+}
+
+.error_msg {
+	width: 100%;
+    position: absolute;
+    color: #ff0202;
+}
+
+.label{
+	font-family: 'Anton', sans-serif;
+	font-size: smaller;
+    color: #0d3138;
+		}
+.table_css td{
+
+	padding-left: 10;
+    padding-bottom: 10;
+}	
+.table_css{
+    padding-top: 40;
+    position: relative;
+}
+
+.table_css input[type="submit"] {
+
+    background: #154561;
+    color: white;
+    border-style: outset;
+    border-color: #0066A2;
+    height: 30;
+    width: 80px;
+    font-family: 'Abel', sans-serif;
+    text-align: -webkit-center;
+    float: right;
+}
+
+.hide_form{
+
+        visibility: hidden;
+}
+
+.success_msg {
+    position: absolute;
+    left: 50%;
+    top: 50%;
+    margin-top: 126px;
+    transform: translateX(-50%);
+    z-index: 999;
+}

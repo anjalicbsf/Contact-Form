@@ -1,12 +1,12 @@
 
 <?php
-//echo "You have logged in successfully";
-// echo '<pre>'. print_r($_POST).'</pre>';
 
-//if ($_SERVER["REQUEST_METHOD"]==POST){
+session_start();
+
 
 $pass="Milind@156";
-$mname=$_POST["name"];
+$mname= ( isset( $_POST["name"] ) ) ? $_POST["name"] : '';
+$memail=(isset($_POST["email"])) ? $_POST["email"] : '';
 require_once 'libs/PHPMailer/PHPMailerAutoload.php';
 
 $mail = new PHPMailer;
@@ -21,7 +21,7 @@ $mail->Port = 587;
 
 $mail->setFrom("anjalic@bsf.io", 'Anjali Chavan',0);
 $mail->addReplyTo("anjalic@bsf.io", 'Anjali Chavan');
-$mail->addAddress($_POST["email"]);  
+$mail->addAddress($memail);  
 
 
 $mail->isHTML(true);  
@@ -43,41 +43,14 @@ if(!$mail->send()) {
     echo 'Message could not be sent.';
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
-    echo 'You have logged in successfully';}
-
-
-
-
-
-
-$varname=$_POST["name"] ;
-$varemail=$_POST["email"];
-$varnumber=$_POST["number"];
-$varlocation=$_POST["location"];
-
-
-$link = PDO('localhost', 'root', '');
-
-if (!$link) {
-            die('Could not connect: ' . $link->errorInfo());
-            }
-echo 'Connected successfully';
-
-
-
-
-
-	$sql = "INSERT INTO contact_form_input (Name,Email,Contact_number,Location) VALUES ( '$varname','$varemail','$varnumber','$varlocation )";
-      
-//    // mysql_select_db('contat_form');
-//    // $retval = mysql_query( $sql, $link );
+	require_once ('insert_data.php');
+	$_SESSION['success'] = "<span class='success_msg'>You have logged in successfully</span>";
+	header("Location: http://localhost/anjali/Contact-Form/index.php");
    
-//    // if(! $retval ) {
-//    //    die('Could not enter data: ' . mysql_error());
-//    // }
-   
-//    echo "Entered data successfully\n";
-   
-//    mysql_close($link);
-//}
+}
+ 
+die();
+
+
+
 ?>

@@ -1,6 +1,6 @@
-
 function validate(){
-	console.log('validate function');
+	console.log('validate');
+	return false;
 
 	var vname = document.form.name.value;
 	var vemail = document.form.email.value;
@@ -17,8 +17,8 @@ function validate(){
 	     
 		errorFlag = true;
 		errorMsg += "Enter the name!";
-		document.getElementById("myForm").innerHTM="Enter valid name";
-		//console.log(errorMsg);
+		document.getElementById("myForm").innerHTML="Enter valid name";
+		console.log(errorMsg);
 		
 	   }
 	
@@ -29,7 +29,7 @@ function validate(){
 		errorFlag = true;
 		errorMsg += "Enter the email";
 		document.getElementById("myForm").innerHTML=errorMsg;
-		//console.log(errorMsg);
+		console.log(errorMsg);
 	  }else if(!emailRegex.test(vemail)){
 	
 		errorFlag = true;
@@ -40,7 +40,7 @@ function validate(){
 	  }
 
 
-	  if (vnumber == "" )
+	  if (vnumber=="" )
 	 {
 	 
 		errorFlag = true;
@@ -77,7 +77,5 @@ function validate(){
 		//console.log(errorMsg);
 		return false;
 	}
-	
-
-     
+	     
 }
