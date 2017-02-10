@@ -30,7 +30,7 @@ $mail->isHTML(true);
 //$bodyContent = 'This is the <b>simple email</b> sent from localhost using PHP ';
 //$bodyContent='This file contains  <h3 style="color:red;">AUDI CAR</h3> image as attachment';
 $bodyContent="Hello....$mname.<br>
-You have logged in successfully!!!<br>
+You have submitted details successfully!!!<br>
 Have a nice day.";
 $mail->Subject = 'Email from Localhost';
 $mail->Body    = $bodyContent;
@@ -45,7 +45,7 @@ if(!$mail->send()) {
 } else {
 	require_once ('insert_data.php');
 	$_SESSION['success'] = "<span class='success_msg'>You have logged in successfully</span>";
-	header("Location: http://localhost/anjali/Contact-Form/index.php");
+	header("Location: http://localhost/anjali/Contact-Form");
    
 }
  

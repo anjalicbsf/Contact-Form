@@ -10,16 +10,12 @@ if(isset($_SESSION['success'])){
 <html>
 <head>
     <title>Home page</title>
-
-    <!-- <link rel="stylesheet" type="text/css" href="assets/css/font.css"> -->
     <link rel="stylesheet" type="text/css" href="assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
-
-
     <script type="text/javascript" src="include/form_valid.js"></script>
   
      
