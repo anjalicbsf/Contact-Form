@@ -44,7 +44,7 @@ if(!$mail->send()) {
     echo 'Mailer Error: ' . $mail->ErrorInfo;
 } else {
 	require_once ('insert_data.php');
-	$_SESSION['success'] = "<span class='success_msg'>You have logged in successfully</span>";
+	$_SESSION['success'] = "<span class='success_msg'>You have submitted details successfully!!!</span>";
 	header("Location: http://localhost/anjali/Contact-Form");
    
 }

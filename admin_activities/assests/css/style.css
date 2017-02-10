@@ -1,4 +1,85 @@
-.login_box {
-    background-color: #d0ecba;
+body{
+	background-color: #d0ecba;
+  color: #666666;
+  font-family: 'RobotoDraft', 'Roboto', sans-serif;
+  font-size: 14px;
 }
-.heading{font-family: 'Play', sans-serif;}
+
+.heading{  
+  letter-spacing: 1px;
+  padding-left: 14%;
+  padding-top: 6%;
+  font-size: 22px;
+  color: #cfe051;
+}
+
+
+.login_box {
+	width: 60%;
+  background-color: #023844;
+  margin-left: 19%;
+}
+
+label{
+
+  font-size: x-large;
+  font-family: serif;
+  font-weight: 600;
+  color: #009688;
+}
+
+.table_css{
+  padding-left: 10%;
+}
+
+.table_css td{
+  padding-left: 51%;
+  padding-top: 13%;
+  padding-bottom: 3%;
+}	
+
+.submit_circle{
+  background: #ed2553;
+  width: 68px;
+  height: 72px;
+  border-radius: 100%;
+  margin-left: 205%;
+}
+
+input[type="submit"] {
+  background: transparent;
+  border: transparent;
+  font-size: medium;
+  padding-top: 41%;
+  color: white;
+  font-weight: 200;
+}
+
+.admin_home_page_heading {
+  font-family: serif;
+  font-size: xx-large;
+  text-align: -webkit-left;
+  padding: 10px;
+  background-color: tomato;
+}
+
+.admin_view_record_button{
+  background: transparent;
+  color: transparent;
+}
+
+.admin_home_background {
+  background-color: #d49191;
+}
+
+.admin_display_table {
+  border: bisque;
+  padding: 12%;
+  background-color: aquamarine;
+}
+
+.admin_record_table_title {
+  font-size: x-large;
+  font-family: -webkit-body;
+  color: crimson;
+}
