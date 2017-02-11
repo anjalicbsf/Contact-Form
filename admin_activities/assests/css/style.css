@@ -1,25 +1,43 @@
-body{
-	background-color: #d0ecba;
-  color: #666666;
-  font-family: 'RobotoDraft', 'Roboto', sans-serif;
-  font-size: 14px;
+.wrap {
+    
+   background-color: #0066cc;
 }
+
+
+.col-2 {
+    display: inline-block;
+    margin: -1px;
+}
+
+.sidebar.col-2 {
+    width: 30%;
+    background-color: #0066cc;
+}
+
+.login_screen.col-2 {
+    width: 70%;
+    background-color: #e5e7e8;
+}
+
+
+
 
 .heading{  
-  letter-spacing: 1px;
-  padding-left: 14%;
-  padding-top: 6%;
-  font-size: 22px;
-  color: #cfe051;
+    letter-spacing: 1px;
+    padding-left: 27%;
+    padding-top: 9%;
+    color: #0066cc;
+    font-family: initial;
+
 }
 
 
-.login_box {
+/*.login_box {
 	width: 60%;
   background-color: #023844;
   margin-left: 19%;
-}
-
+}*/
+/*
 label{
 
   font-size: x-large;
@@ -27,51 +45,84 @@ label{
   font-weight: 600;
   color: #009688;
 }
+*/
 
-.table_css{
-  padding-left: 10%;
+
+table.table_css {
+    padding-left: 8%;
+    padding-top: 8%;
 }
 
-.table_css td{
-  padding-left: 51%;
-  padding-top: 13%;
-  padding-bottom: 3%;
-}	
-
-.submit_circle{
-  background: #ed2553;
-  width: 68px;
-  height: 72px;
-  border-radius: 100%;
-  margin-left: 205%;
+.table_css td {
+    padding-left: 31%;
+    padding-top: 7%;
+    
 }
+
 
 input[type="submit"] {
-  background: transparent;
-  border: transparent;
-  font-size: medium;
-  padding-top: 41%;
-  color: white;
-  font-weight: 200;
+    /*width: 100%;*/
+    background-color: #0066cc;
+    border: none;
+    border-radius: 3px;
+    color: #fff;
+    cursor: pointer;
+    font-size: 18px;
+    font-weight: 700;
+    padding: 15px 30px 12px;
+    /*text-align: center;
+    margin-left: 10%;*/
+    font-family: initial;
+  }
+
+
+input[type="text"] {
+    background-color: #fff;
+    border: 1px solid #CFD8DC;
+    border-radius: 2px;
+    color: #263238;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 30px 20px;
+    padding-top: 10%;
+    width: 100%;
+    font-family: initial;
 }
+
+
+input[type="password"] {
+    background-color: #fff;
+    border: 1px solid #CFD8DC;
+    border-radius: 2px;
+    color: #263238;
+    font-size: 18px;
+    font-weight: 400;
+    padding: 25px 30px 20px;
+    width: 100%;
+    padding-top: 10%;
+    font-family: initial;
+}
+
 
 .admin_home_page_heading {
-  font-family: serif;
-  font-size: xx-large;
-  text-align: -webkit-left;
-  padding: 10px;
-  background-color: tomato;
+    font-size: 25px;
+    text-align: left;
+    padding-bottom: 4%;
+    padding-top: 4%;
+    color: #ffffff;
 }
 
-.admin_view_record_button{
-  background: transparent;
-  color: transparent;
+
+
+ .admin_view_record_button {
+   
+    padding-top: 20px;
 }
+
 
 .admin_home_background {
   background-color: #d49191;
 }
-
 .admin_display_table {
   border: bisque;
   padding: 12%;
@@ -79,7 +130,29 @@ input[type="submit"] {
 }
 
 .admin_record_table_title {
-  font-size: x-large;
-  font-family: -webkit-body;
-  color: crimson;
+  font-size: 18px;
+
+    padding-bottom: 4%;
+    padding-top: 4%;
+    color: #b11c1c;
+    background-color: teal;
+    font-family: sans-serif;
+}
+
+
+
+
+
+.admin_display_table {
+    color: teal;
+}
+
+
+
+.admin_display_table th {
+    
+}
+
+.admin_display_table td {
+    
 }

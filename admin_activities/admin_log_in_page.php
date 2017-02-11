@@ -1,53 +1,69 @@
 <!DOCTYPE html>
 <html>
+
 <head>
-	<title>Admin login page</title>
-	<link rel="stylesheet" type="text/css" href="assests/css/style.css"> 
-	<script type="text/javascript" src="include/admin_validation.js"></script>
+    <title>Admin login page</title>
+
+    <link rel="stylesheet" type="text/css" href="assests/css/style.css">
+    <script type="text/javascript" src="include/admin_validation.js"></script>
 
 </head>
+
 <body>
-	<div class="login_box">
-		<div class="heading">
-			<h1>Admin Login Form</h1>
-		</div>
+	<div class="wrap">
+        <div class="sidebar col-2">
+        </div>
+        
+        <div class="login_screen col-2">
+			<div class="heading">
+                <h1>Admin Login Form</h1>
+            </div>
 
-		<table class="table_css">
+             <table class="table_css">
+                <form name="form" method="POST" action="vendor/admin_home_page.php">
+                    <!-- <tr>
+                        <td>
+                            <label>Username</label>
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            <input type="text" name="admin_username" placeholder="Username" size=20>
+                        </td>
 
-			<form name="form" method="POST" action="vendor/admin_home_page.php" >
+                    </tr>
+                    <!-- <tr>
+                        <td>
+                            <label>Password</label>
+                        </td>
+                    </tr> -->
+                    <tr>
+                        <td>
+                            <input type="Password" name="admin_password" placeholder="Password" size="20">
+                        </td>
+                    </tr>
+                    <tr>
+                        <td>
+                            <div class="submit_button">
+                                <input type="submit" value="Log In" name="submit" onclick="return (validate())">
+                            </div>
+                        </td>
 
-			<tr>
-				<td><label>Username</label></td>
-			</tr>
-			<tr>
-				<td><input type="text" name="admin_username"></td>
-				
-			</tr>
-			<tr>
-				<td><label>Password</label></td>
-			</tr>
-			<tr>
-				<td><input type="Password" name="admin_password"></td>
-			</tr>
-			<tr>
-				<td>
-				<div class="submit_circle">
-				<input type="submit" name="submit" onclick="return (validate())" >
-				</div>
-				</td>
+                    <!-- </tr>
+                    <tr>
+                        <td>
+                            <div id="fname"></div>
+                        </td>
+                        </td>
+                    </tr>
 
-			</tr>
-			<tr>
-				<td>
-                    <div id="fname"></div>
-                 </td></td>
-			</tr>
-			</div>
-			
+ -->
 
-		</table>
+            </table>
 
-		</form>
-	
+            </form>
+         </div>
+    </div> 
 </body>
+
 </html>

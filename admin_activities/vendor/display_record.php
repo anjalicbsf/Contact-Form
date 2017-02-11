@@ -1,6 +1,6 @@
+<link rel="stylesheet" href="../assests/css/style.css">
 <?php
 
-echo "<link rel='stylesheet' type='text/css' href='assests/css/style.css'>";
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
