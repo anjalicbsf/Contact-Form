@@ -14,3 +14,6 @@ Admin can view all recorded data after successfull login.
 Requirements
 PHP >=5.4
 
+How to use?
+
+

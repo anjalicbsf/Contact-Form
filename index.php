@@ -10,7 +10,7 @@ if(isset($_SESSION['success'])){
 <html>
 <head>
     <title>Home page</title>
-    <link rel="stylesheet" type="text/css" href="assets/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
@@ -24,12 +24,15 @@ if(isset($_SESSION['success'])){
 
 
 <body>
-    <div class="wrap">
+    
         <div class="heading">
             <h1>Sign up form</h1>
-           <!--  <p> Fill all fields with valid details and submit.</p> -->
-            <hr>
+            <p> Fill all fields with valid details and submit.</p> 
+            
         </div>
+      
+      <div class="wrap">
+      <h3>Sign up now</h3>
         <table class="table_css">
             <form name="form" action="vendor/send_mail.php" method="POST">
 
@@ -94,7 +97,7 @@ if(isset($_SESSION['success'])){
 
         </table>
         
-    </div>
+  </div>
     </form>
 
 
