@@ -26,8 +26,8 @@ if(isset($_SESSION['success'])){
 <body>
     <div class="wrap">
         <div class="heading">
-            <h1>Sign up form for student</h1>
-            <p> Fill all fields with valid details and submit.</p>
+            <h1>Sign up form</h1>
+           <!--  <p> Fill all fields with valid details and submit.</p> -->
             <hr>
         </div>
         <table class="table_css">
@@ -86,7 +86,7 @@ if(isset($_SESSION['success'])){
                 </tr>
 
                 <tr>
-                    <td colspan="2">
+                    <td colspan="2" id="index_submit">
                         <input type="submit" name="submit" onclick="return(validate());">
                     </td>
                 </tr>

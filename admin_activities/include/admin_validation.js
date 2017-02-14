@@ -15,7 +15,7 @@ function validate() {
   //       //console.log(errorMsg);
   //       return false;
 		// }elseif(vusername == "anjalic"){
-		// document.getElementById("fname").innerHTML = "";
+		// document.getElementById("err_field").innerHTML = "";
  	// 	}document.getElementById("fname").innerHTML = "*Enter correct username!";
 
    
@@ -24,7 +24,8 @@ function validate() {
 			return true;
 		
 			}else{
-			alert ("Incorrect Username or Password!");
+				document.getElementById("err_field").innerHTML = "Incorrect username or password";
+		
 			return false;}
 		
 		}	

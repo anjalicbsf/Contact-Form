@@ -4,12 +4,12 @@
 <head>
     <title>Admin login page</title>
 
-    <link rel="stylesheet" type="text/css" href="assests/css/style.css">
+    <link rel="stylesheet" type="text/css" href="./assests/css/style.css">
     <script type="text/javascript" src="include/admin_validation.js"></script>
 
 </head>
 
-<body>
+<body class="admin_login_background">
 	<div class="wrap">
         <div class="sidebar col-2">
         </div>
@@ -26,6 +26,13 @@
                             <label>Username</label>
                         </td>
                     </tr> -->
+                    <tr>
+                        <td><div class="error_msg">
+                            <div id="err_field"></div>
+                            </div>
+                        </td>
+                        </td>
+                    </tr>
                     <tr>
                         <td>
                             <input type="text" name="admin_username" placeholder="Username" size=20>
@@ -45,19 +52,14 @@
                     <tr>
                         <td>
                             <div class="submit_button">
-                                <input type="submit" value="Log In" name="submit" onclick="return (validate())">
+                                <input  type="submit"  value="Log In" name="submit" onclick="return (validate())">
                             </div>
                         </td>
 
-                    <!-- </tr>
-                    <tr>
-                        <td>
-                            <div id="fname"></div>
-                        </td>
-                        </td>
-                    </tr>
+                     </tr>
 
- -->
+
+ 
 
             </table>
 

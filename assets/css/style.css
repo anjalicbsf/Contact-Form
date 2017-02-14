@@ -1,72 +1,108 @@
 body {
-	font-family: 'Titillium Web', sans-serif;
-	background-color: powderblue;
+    font-family: 'Titillium Web', sans-serif;
+    background-repeat: no-repeat;
+    background-size: cover;
+    background-position: center;
+    background-image: url('https://images.pexels.com/photos/164682/pexels-photo-164682.jpeg?w=940&h=650&auto=compress&cs=tinysrgb');
+    padding-top: 6%;
+    
 }
-
 .wrap {
-    width: 340px;
-    margin: auto;
-    background: #8bd3de;
+    /*width: 312px;*/
+   /* background-image: url(http://www.powerpointhintergrund.com/uploads/desk-background-21.jpg);*/
+ /*   background-repeat: no-repeat;
+    background-size: cover;*/
+    /*opacity: 0.5;*/
+   
 }
 
+
+.heading {
+      background-color: rgba(119, 0, 0, 0.2);
+    border-radius: 20px;
+}
 .heading > h1 {
-    font-size: 40px;
-    text-align: center;
+   /* background-image: url(http://3.bp.blogspot.com/-K14tvtTdXpI/VG5YdJf1pmI/AAAAAAAAAGY/Y5PSFH_JJ0o/s400/torn_paper_bg.png);
+    width: 88%;
+    background-repeat: no-repeat;*/
+    font-size: 31px;
+    padding-left: 54%;
+    color: #ffffff;
+
     
 
+}
+#index_submit{
+
+    padding-top: 6%;
 }
 
 .heading > p {
 	font-family: 'Fira Sans Extra Condensed', sans-serif;
     text-align: center;
     font-size: smaller;
+    padding-left: 63%%;
 
 }
 
+
+
+
 .error_msg {
 	width: 100%;
-    position: absolute;
-    color: #ff0202;
+   /* position: absolute;*/
+           color: #ea0606;
 }
 
 .label{
 	font-family: 'Anton', sans-serif;
 	font-size: smaller;
-    color: #0d3138;
-		}
+    color: white;
+    padding-left: 2%;
+
+}
 .table_css td{
 
-	padding-left: 10;
-    padding-bottom: 10;
+    padding: 2%;
+    padding-left: 13%;
 }	
 .table_css{
-    padding-top: 40;
-    position: relative;
+        margin-left: 50%;
+    margin-top: 140px;
+}
+
+
+.table_css input[type="text"]{
+
+    border: 2px solid rgba(0, 0, 0, 0.74);
+    border-radius: 5px;
+    padding: 2%;
+
 }
 
 .table_css input[type="submit"] {
 
-    background: #154561;
+    background: #770000;
     color: white;
-    border-style: outset;
-    border-color: #0066A2;
+    border-color: #565656;
     height: 30;
     width: 80px;
     font-family: 'Abel', sans-serif;
     text-align: -webkit-center;
+    border-radius: 9px;
     float: right;
 }
 
 .hide_form{
 
-        visibility: hidden;
+    visibility: hidden;
 }
 
 .success_msg {
-    position: absolute;
-    left: 50%;
+    
+   
     top: 50%;
     margin-top: 126px;
-    transform: translateX(-50%);
-    z-index: 999;
+        color: #ffffff;
+    padding-left: 47%;
 }

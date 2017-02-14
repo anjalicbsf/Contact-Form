@@ -4,7 +4,7 @@
 
 if ($_SERVER['REQUEST_METHOD'] == 'POST') 
 {
-     echo "<div class='admin_record_table_title'>"."Here is the record of all students"."</div>";
+     echo "<div class='admin_display_page'>"."<div class='admin_record_table_title'>"."Here is the record of all students"."</div>";
 
     $dsn = 'mysql:host=127.0.0.1;dbname=contact_form'; 
     $username = 'root'; 
@@ -21,7 +21,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     }
 
     echo 
-    "<table border='2' class='admin_display_table'>
+    "<table>
     <tr>
     <th>ID</th>
     <th>Name</th>
@@ -44,6 +44,7 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
 
   echo "</tr>";
   echo "</table>";
+  echo "</div>";
 
 
       

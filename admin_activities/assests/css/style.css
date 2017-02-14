@@ -1,39 +1,38 @@
 .wrap {
+
     
-   background-color: #0066cc;
 }
-
-
-.col-2 {
+/*.col-2 {
     display: inline-block;
     margin: -1px;
-}
-
-.sidebar.col-2 {
+}*/
+/*.sidebar.col-2 {
     width: 30%;
     background-color: #0066cc;
-}
-
+}*/
 .login_screen.col-2 {
-    width: 70%;
-    background-color: #e5e7e8;
+  
+    
 }
-
-
-
-
-.heading{  
+.heading {
     letter-spacing: 1px;
-    padding-left: 27%;
-    padding-top: 9%;
-    color: #0066cc;
+    padding-left: 33%;
+    background-color: rgba(186, 163, 39, 0.41);
+    border: 1px solid;
+    border-radius: 2px;
+    font-size: 18px;
+    font-weight: 400;
     font-family: initial;
-
+    color: white;
 }
 
-
+.admin_login_background{
+    background-image: url(https://images.pexels.com/photos/70232/pexels-photo-70232.jpeg?h=350&auto=compress&cs=tinysrgb);
+    background-repeat: no-repeat;
+    background-size: cover;
+}
 /*.login_box {
-	width: 60%;
+    width: 60%;
   background-color: #023844;
   margin-left: 19%;
 }*/
@@ -46,113 +45,98 @@ label{
   color: #009688;
 }
 */
+.error_msg{
 
+    font-size: 14px;
+    font-family: monospace;
+    color: #ef1717;
 
-table.table_css {
-    padding-left: 8%;
-    padding-top: 8%;
 }
-
-.table_css td {
-    padding-left: 31%;
-    padding-top: 7%;
-    
-}
-
-
 input[type="submit"] {
-    /*width: 100%;*/
-    background-color: #0066cc;
-    border: none;
-    border-radius: 3px;
-    color: #fff;
-    cursor: pointer;
-    font-size: 18px;
+
+       font-size: 16px;
     font-weight: 700;
     padding: 15px 30px 12px;
-    /*text-align: center;
-    margin-left: 10%;*/
     font-family: initial;
-  }
-
-
+    color: #daa903;
+}
+.submit_button {
+       padding-left: 29%;
+    padding-top: 17%;
+}
 input[type="text"] {
-    background-color: #fff;
+    background-color: rgba(186, 163, 39, 0.41);
     border: 1px solid #CFD8DC;
     border-radius: 2px;
     color: #263238;
     font-size: 18px;
     font-weight: 400;
-    padding: 25px 30px 20px;
+    padding: 11px 7px 21px;
     padding-top: 10%;
     width: 100%;
     font-family: initial;
 }
 
-
+.table_css {
+    margin: 0 auto;
+    margin-top: 10%;
+}
 input[type="password"] {
-    background-color: #fff;
+    background-color: rgba(186, 163, 39, 0.41);
     border: 1px solid #CFD8DC;
     border-radius: 2px;
     color: #263238;
     font-size: 18px;
     font-weight: 400;
-    padding: 25px 30px 20px;
-    width: 100%;
+    padding: 11px 7px 21px;
     padding-top: 10%;
+    width: 100%;
     font-family: initial;
 }
-
 
 .admin_home_page_heading {
-    font-size: 25px;
+    font-size: 30px;
     text-align: left;
-    padding-bottom: 4%;
-    padding-top: 4%;
-    color: #ffffff;
+    font-weight: bold;
+    color: rgb(220, 220, 220)
 }
+.admin_view_record_button {
+    padding-top: 30%;
+    padding-left: 46%;
 
-
-
- .admin_view_record_button {
-   
-    padding-top: 20px;
 }
+#view_record{
 
-
+    background-color: #FF5722;
+    font-size: 16px;
+    font-weight: 700;
+    font-family: initial;
+    color: #080808;
+    border-radius: 22%;
+}
 .admin_home_background {
-  background-color: #d49191;
+    background-image: url(https://images.pexels.com/photos/273016/pexels-photo-273016.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
 .admin_display_table {
-  border: bisque;
-  padding: 12%;
-  background-color: aquamarine;
+    padding: 3%;
+    color: white;
 }
-
 .admin_record_table_title {
-  font-size: 18px;
-
-    padding-bottom: 4%;
-    padding-top: 4%;
+   font-size: 18px;
+    padding: 2%;
+    
     color: #b11c1c;
-    background-color: teal;
-    font-family: sans-serif;
+   
+    font-family: monospace;
+    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSzjjMcC5QRHAG-7DgbOJegiwwp0uItfgzCOHpDaNr1Y96BJ2);
+    background-repeat: no-repeat;
+    background-size: cover;
 }
-
-
-
-
-
-.admin_display_table {
-    color: teal;
-}
-
-
-
-.admin_display_table th {
-    
-}
-
-.admin_display_table td {
-    
-}
+.admin_display_page {
+        background-image: url(https://images.pexels.com/photos/48126/books-education-school-literature-48126.jpeg?h=350&auto=compress&cs=tinysrgb);
+    background-repeat: no-repeat;
+    background-size: cover;
+    width: 100%;
+    height: 100%;
