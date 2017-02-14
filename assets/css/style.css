@@ -1,90 +1,73 @@
 body {
-     font-family: 'Titillium Web', sans-serif;
+    font-family: 'Titillium Web', sans-serif;
     background-image: url(form_img.png);
     background-repeat: no-repeat;
     background-size: cover;
-   
-   
 }
-
 .heading {
-       /* background-color: rgba(119, 0, 0, 0.2);
+    /* background-color: rgba(119, 0, 0, 0.2);
     border-radius: 20px;
     position: absolute;
     text-align: left;*/
-
+    
     position: relative;
 }
 .heading > h1 {
-    position: absolute;             
-    transform: translate(259px,212px);
-        color: wheat;
+    position: absolute;
+    transform: translate(259px, 212px);
+    color: wheat;
+    font-size: 40px;
 }
-
 .heading > p {
     position: absolute;
-    transform: translate(214px,275px);
+    transform: translate(229px, 284px);
     color: wheat;
     opacity: 0.5;
 }
-
 .wrap {
-display: inline-block;
-position: relative;
-background-color: white;
-position: absolute;
-top: 25%;
-right: 10%;
-    transform: translate(0,-50px);
-         width: 29%;
+    display: inline-block;
+    position: relative;
+    background-color: white;
+    position: absolute;
+    top: 25%;
+    right: 10%;
+    transform: translate(0, -50px);
+    width: 29%;
     text-align: center;
-        border-radius: 22px;
-    
+    border-radius: 22px;
 }
-
-
 .wrap h3 {
     color: rgba(183, 160, 160, 0.67);
 }
-
 .table_css {
     padding-left: 20%;
     padding-right: 20%;
     padding-top: 10%;
     padding-bottom: 10%;
-            background-color: #d7ded1;
-         border-radius: 22px;
-         color: #a57070;
+    background-color: #d7ded1;
+    border-radius: 22px;
+    color: #a57070;
 }
-       
-#index_submit {
-  
-}
-
-.error_msg {
-         width: 30%;
+#index_submit {} .error_msg {
+    width: 30%;
     position: absolute;
     color: #ea0606;
     font-size: 13px;
-    transform: translate(10px,0px);
+    transform: translate(10px, 0px);
 }
 .label {
-     color: #a57070;
+    color: #a57070;
 }
 .table_css td {
-        padding: 2%;
-
-    
+    padding: 2%;
 }
-
 .table_css input[type="text"] {
-       border: 1px solid rgba(197, 153, 153, 0.74);
+    border: 1px solid rgba(197, 153, 153, 0.74);
     border-radius: 5px;
     padding: 4%;
-   
 }
 .table_css input[type="submit"] {
-       background: #618c11;
+    background: #618c11;
     color: white;
     border-color: #ffffff;
     height: 38px;
@@ -93,10 +76,9 @@ right: 10%;
     text-align: -webkit-center;
     border-radius: 9px;
     float: center;
-    transform: translate(107px,24px);
+    transform: translate(107px, 24px);
 }
-
 .success_msg {
-      color: #ffffff;
+    color: #ffffff;
     padding-left: 65%;
 }
