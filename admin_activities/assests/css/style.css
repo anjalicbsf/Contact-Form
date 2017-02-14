@@ -1,35 +1,15 @@
-.wrap {
 
-    
-}
-/*.col-2 {
-    display: inline-block;
-    margin: -1px;
-}*/
-/*.sidebar.col-2 {
-    width: 30%;
-    background-color: #0066cc;
-}*/
-.login_screen.col-2 {
-  
-    
-}
 .heading {
-    letter-spacing: 1px;
-    padding-left: 33%;
-    background-color: rgba(186, 163, 39, 0.41);
-    border: 1px solid;
-    border-radius: 2px;
+     letter-spacing: 1px;
     font-size: 18px;
     font-weight: 400;
     font-family: initial;
     color: white;
+        text-align: center;
 }
 
 .admin_login_background{
-    background-image: url(https://images.pexels.com/photos/70232/pexels-photo-70232.jpeg?h=350&auto=compress&cs=tinysrgb);
-    background-repeat: no-repeat;
-    background-size: cover;
+      background-image: linear-gradient(to top right,#796363 10%, #d8aeae 65%, #ef6b11 125%);
 }
 /*.login_box {
     width: 60%;
@@ -47,24 +27,26 @@ label{
 */
 .error_msg{
 
-    font-size: 14px;
+    font-size: 20px;
     font-family: monospace;
     color: #ef1717;
+    text-align: center;
 
 }
 input[type="submit"] {
 
-       font-size: 16px;
+     font-size: 16px;
     font-weight: 700;
-    padding: 15px 30px 12px;
+    padding: 14px 30px 12px;
     font-family: initial;
-    color: #daa903;
+    background-color: #13d0c5;
+    border: 2px solid #3ec7d5;
 }
 .submit_button {
-       padding-left: 29%;
-    padding-top: 17%;
+          padding-left: 35%;
+    padding-top: 3%;
 }
-input[type="text"] {
+/*input[type="text"] {
     background-color: rgba(186, 163, 39, 0.41);
     border: 1px solid #CFD8DC;
     border-radius: 2px;
@@ -75,68 +57,83 @@ input[type="text"] {
     padding-top: 10%;
     width: 100%;
     font-family: initial;
+}
+*/
+.table_css {
+        margin: 0 auto;
+    margin-top: 60px;
+    padding: 50px 0;
+    max-width: 480px;
+   background: #34bcc3;
+    width: 100%;
 }
 
-.table_css {
-    margin: 0 auto;
-    margin-top: 10%;
+
+.table_css td{
+
+        padding: 2%;
 }
-input[type="password"] {
-    background-color: rgba(186, 163, 39, 0.41);
-    border: 1px solid #CFD8DC;
+input[type="text"], input[type="password"] {
+    /* background-color: rgba(186, 163, 39, 0.41); */
+    border-bottom: 2px solid #2b7108;
     border-radius: 2px;
     color: #263238;
     font-size: 18px;
     font-weight: 400;
-    padding: 11px 7px 21px;
-    padding-top: 10%;
-    width: 100%;
-    font-family: initial;
-}
+    padding: 15px 12px;
+    display: block;
+    width: 90%;
+    max-width: 300px;
+    margin: 10px auto;
+    font-family: initial;}
+
 
 .admin_home_page_heading {
-    font-size: 30px;
+   font-size: 30px;
     text-align: left;
     font-weight: bold;
-    color: rgb(220, 220, 220)
+    color: rgb(255, 250, 250);
+    background-color: #3a3030;
+    padding: 1%;
 }
 .admin_view_record_button {
-    padding-top: 30%;
-    padding-left: 46%;
+       padding-top: 5%;
+    padding-left: 2%;
 
 }
 #view_record{
 
-    background-color: #FF5722;
-    font-size: 16px;
-    font-weight: 700;
-    font-family: initial;
-    color: #080808;
-    border-radius: 22%;
+    background: transparent;
+    border-radius: 19px;
+    border-color: black;
 }
 .admin_home_background {
-    background-image: url(https://images.pexels.com/photos/273016/pexels-photo-273016.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
+    /*background-image: url(https://images.pexels.com/photos/273016/pexels-photo-273016.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-repeat: no-repeat;
-    background-size: cover;
+    background-size: cover;*/
+        background-color: #796363;
 }
 .admin_display_table {
     padding: 3%;
     color: white;
 }
 .admin_record_table_title {
-   font-size: 18px;
+     font-size: 18px;
     padding: 2%;
-    
-    color: #b11c1c;
-   
+    color: #0b1d1d;
     font-family: monospace;
-    background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSzjjMcC5QRHAG-7DgbOJegiwwp0uItfgzCOHpDaNr1Y96BJ2);
-    background-repeat: no-repeat;
-    background-size: cover;
+    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSzjjMcC5QRHAG-7DgbOJegiwwp0uItfgzCOHpDaNr1Y96BJ2); */
+    /* background-repeat: no-repeat; */
+    /* background-size: cover; */
+    border-bottom: 3px solid #1abfbf;
+    background-color: #beecdd;
 }
 .admin_display_page {
-        background-image: url(https://images.pexels.com/photos/48126/books-education-school-literature-48126.jpeg?h=350&auto=compress&cs=tinysrgb);
-    background-repeat: no-repeat;
-    background-size: cover;
-    width: 100%;
-    height: 100%;
+       height: 100%;
+    background-color: rgba(166, 226, 223, 0.73);
+}
+.record_table th,td{
+        padding: 5%;
+
+
+}

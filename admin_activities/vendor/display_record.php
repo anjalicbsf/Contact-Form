@@ -21,12 +21,12 @@ if ($_SERVER['REQUEST_METHOD'] == 'POST')
     }
 
     echo 
-    "<table>
+    "<table class='record_table'>
     <tr>
     <th>ID</th>
     <th>Name</th>
     <th>Email</th>
-    <th>Contact_form</th>
+    <th>Contact_Number</th>
     <th>Location</th>
     </tr>"
     ;
