@@ -1,41 +1,22 @@
-
 .heading {
-     letter-spacing: 1px;
+    letter-spacing: 1px;
     font-size: 18px;
     font-weight: 400;
     font-family: initial;
     color: white;
-        text-align: center;
+    text-align: center;
 }
-
-.admin_login_background{
-      background-image: linear-gradient(to top right,#796363 10%, #d8aeae 65%, #ef6b11 125%);
+.admin_login_background {
+    background-image: linear-gradient(to top right, #796363 10%, #d8aeae 65%, #ef6b11 125%);
 }
-/*.login_box {
-    width: 60%;
-  background-color: #023844;
-  margin-left: 19%;
-}*/
-/*
-label{
-
-  font-size: x-large;
-  font-family: serif;
-  font-weight: 600;
-  color: #009688;
-}
-*/
-.error_msg{
-
+.error_msg {
     font-size: 17px;
     font-family: monospace;
     color: #ef1717;
     text-align: center;
-
 }
 input[type="submit"] {
-
-     font-size: 16px;
+    font-size: 16px;
     font-weight: 700;
     padding: 14px 30px 12px;
     font-family: initial;
@@ -43,39 +24,25 @@ input[type="submit"] {
     border: 2px solid #3ec7d5;
 }
 .submit_button {
-          padding-left: 35%;
+    padding-left: 35%;
     padding-top: 3%;
 }
-/*input[type="text"] {
-    background-color: rgba(186, 163, 39, 0.41);
-    border: 1px solid #CFD8DC;
-    border-radius: 2px;
-    color: #263238;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 11px 7px 21px;
-    padding-top: 10%;
-    width: 100%;
-    font-family: initial;
-}
-*/
 .table_css {
-        margin: 0 auto;
+    margin: 0 auto;
     margin-top: 60px;
     padding: 50px 0;
     max-width: 480px;
-   background: #34bcc3;
+    background: #34bcc3;
     width: 100%;
-        border-radius: 7px;
+    border-radius: 7px;
 }
-
-
-.table_css td{
-
-        padding: 2%;
+.table_css td {
+    padding: 2%;
 }
-input[type="text"], input[type="password"] {
+input[type="text"],
+input[type="password"] {
     /* background-color: rgba(186, 163, 39, 0.41); */
+    
     border-bottom: 2px solid #2b7108;
     border-radius: 2px;
     color: #263238;
@@ -86,57 +53,56 @@ input[type="text"], input[type="password"] {
     width: 90%;
     max-width: 300px;
     margin: 10px auto;
-    font-family: initial;}
-
-
+    font-family: initial;
+}
 .admin_home_page_heading {
-  font-size: 30px;
+    font-size: 30px;
     text-align: left;
     font-weight: bold;
     color: rgb(255, 250, 250);
     /* background-color: #3a3030; */
+    
     padding: 1%;
-    background-image: linear-gradient(to top right,#3a3030 10%, #b57e7e 65%, #f3eae5 125%);
+    background-image: linear-gradient(to top right, #3a3030 10%, #b57e7e 65%, #f3eae5 125%);
 }
 .admin_view_record_button {
-       padding-top: 5%;
+    padding-top: 5%;
     padding-left: 2%;
-
 }
-#view_record{
-
+#view_record {
     background: transparent;
     border-radius: 19px;
     border-color: #a99d9d;
     color: #f5f3f3;
+    cursor: pointer;
 }
 .admin_home_background {
     /*background-image: url(https://images.pexels.com/photos/273016/pexels-photo-273016.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
     background-repeat: no-repeat;
     background-size: cover;*/
-        background-color: #796363;
+    
+    background-color: #796363;
 }
 .admin_display_table {
     padding: 3%;
     color: white;
 }
 .admin_record_table_title {
-     font-size: 18px;
+    font-size: 18px;
     padding: 2%;
     color: #0b1d1d;
     font-family: monospace;
     /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSzjjMcC5QRHAG-7DgbOJegiwwp0uItfgzCOHpDaNr1Y96BJ2); */
     /* background-repeat: no-repeat; */
     /* background-size: cover; */
+    
     border-bottom: 3px solid #1abfbf;
     background-color: #beecdd;
 }
 .admin_display_page {
-      
     background-color: rgba(166, 226, 223, 0.73);
 }
-.record_table th,td{
-        padding: 5%;
-
-
+.record_table th,
+td {
+    padding: 5%;
 }

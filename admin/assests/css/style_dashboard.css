@@ -1,0 +1,72 @@
+.wrap {
+    width: 100%;
+}
+
+.side_bar {
+  	width: 20%;
+  	
+    
+    display: inline-block;
+    background-color: black;
+    float: left;
+  	
+}
+
+.admin_screen {
+    width: 80%;
+  
+    display: inline-block;
+    background-color: tomato;
+}
+
+.head_bar {
+
+    background-color: steelblue;
+}
+
+.welcome_box {
+   
+    font-family: 'Slabo 27px', serif;
+    color: #a09292;
+    text-align: -webkit-left;
+    font-size: 15px;
+    background-color: #4c4545;
+    padding-left: 5%;
+}
+
+.menu_background {
+    background-color: #3b4144;
+    width: 100%;
+    
+}
+.menu_list p {
+    cursor: pointer;
+    padding-top: 3%;
+    background-color: rgb(146, 160, 167);
+    border-radius: 4px;
+    padding-left: 5%;
+}
+
+.sidenav {
+     z-index: 1;
+    background-color: #111;
+    overflow-x: hidden;
+    transition: 0.5s;
+    
+}
+
+.sidenav a {
+    text-decoration: none;
+    color: #818181;
+    display: block;
+    padding: 0px 0px 7px 49px;
+}
+.sidenav a:hover, .offcanvas a:focus{
+    color: #f1f1f1;
+}
+.sidenav .closebtn {
+    position: relative;
+    top: 7px;
+    left: 71%;
+}
+
