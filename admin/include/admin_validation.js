@@ -19,7 +19,7 @@ function validate() {
  	// 	}document.getElementById("fname").innerHTML = "*Enter correct username!";
 
    
- 		if ( vusername == "anjalic" && vpassword == "anjalic"){
+ 		if ( vusername == "anjali" && vpassword == "anjalic"){
 			
 			return true;
 		
