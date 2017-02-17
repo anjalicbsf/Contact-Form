@@ -10,26 +10,43 @@
 <html>
 <head>
 	<title>Admin Dashboard</title>
+	<!-- 	Fonts -->
 	<link href="https://fonts.googleapis.com/css?family=Slabo+27px" rel="stylesheet">
 	<link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+	<!-- Jquery -->
+	<script src="../assests/js/jquery-3.1.1.min.js"></script>
+
+	<!-- Javascript -->
 	<script type="text/javascript" src="../include/jquery-format.js"></script>
 	<script type="text/javascript" src="../include/admin_dash_menu.js"></script>
+	<script src="../assests/js/admin.js"></script>
+
+	<!-- 	CSS -->
 	<link rel="stylesheet" href="../assests/css/style_dashboard.css">
 	<link rel="stylesheet" href="../assests/font-awesome/css/font-awesome.min.css">
-	<script src="http://code.jquery.com/jquery-latest.js"></script>
 	<script type="text/javascript">
-		$(document).ready(function () {
-    	$("#showdiv").click(function () {
-       $("#hiddendiv").show();             
-    	});
-  		});
-	</script>
+        function returnwasset(){
+        	console.log("hello");
+            alert('return sent');
+            $.ajax({
+                type: "POST",
+                url: "display_record.php",
+               
+                 //or HTML, JSON, etc.
+                success: function(response){
+                    alert(response);
+                    //echo what the server sent back...
+                }
+            });
+        }
+    </script>
 
 </head>
 <body>
 <div class="wrap">
 <div class="sub_wrap">
-<header class="header"> <!-- start:header -->
+<header class="header"> <!-- Header start -->
 	<div class="logo-container">
 		<img src="https://brainstormforce.files.wordpress.com/2014/08/latest-to-use.png?w=549" alt="company-logo" class="logo">
 	</div>	
@@ -42,7 +59,7 @@
 				<span class="name">Anjali Chavan</span>
 				<span class="role">administrator</span>
 			</div>
-			<i class="fa custom-caret"></i>
+			<i class="fa custom-caret" id="dropdown-sign"></i>
 		</a>
 		<div class="dropdown-menu">
 				<ul class="list">
@@ -59,9 +76,9 @@
 				</ul>
 		</div>
 	</div>
-</header>
+</header><!--  Header end -->
 <div class="content-blck">
-<aside  id="sidebar-left" class="sidebar-left">
+<aside  id="sidebar-left" class="sidebar-left"> <!--start left side bar  -->
 		<div class="sidebar-header">
 			<div class="sidebar-title">
 					Navigation
@@ -79,12 +96,27 @@
 							<span>Dashboard</span>
 						</a>
 					</li>
-					<li class="nav-parent"></li>
+					<li class="nav-parent" >
+						<a>
+							<i class="fa fa-table" aria-hidden="true"></i>
+							<span id="tables">Tables</span>
+						</a>
+						<ul class="nav nav-children">
+						 	<!-- <a href="#" onclick="loadDoc();"> -->
+								<li>
+								     View
+								     <button onclick="returnwasset()"> click here</button>
+
+								</li>
+						 <!-- 	</a>  -->
+
+						</ul>
+					</li>
 				</ul>
 			</div>
 		</div>
 </aside> <!-- end of side bar -->
-<section class="content-body">
+<section class="content-body"> <!-- Start right content screen -->
 	<header class="page-header">
 						<h2>Dashboard</h2>
 						<div class="right-wrapper">
@@ -98,21 +130,74 @@
 							</ol>
 						</div>
 	</header>
+	<div class="view-table" id="view-table">
+	
+	</div>
 	<div class="widget-summary-box">
-			<div class="admin-block">
-				Test-1
-			</div>
-			<div class="admin-block">
-				Test-1
-			</div>
-			<div class="admin-block">
-				Test-1
-			</div>
-			<div class="admin-block">
-				Test-1
-			</div>
+	
+				<div class="block col11">
+					<div class="widget-block-panel col11-panel">
+						<div class="widget-block-icon">
+							<div class="icon-base col11-icon">
+								<i class="fa fa-life-ring icon" aria-hidden="true"></i>
+							</div>
+						</div>
+						<div class=" widget-block-desc">
+							<h4 class="desc-title">Support Questions</h4>
+							<strong class="desc-amount">1284</strong>
+							<div class="widget-desc-footer"></div>
+						</div>
+
+					</div>
+				</div>
+				<div class="block col12">
+					<div class="widget-block-panel col12-panel">
+						<div class="widget-block-icon">
+							<div class="icon-base col12-icon">
+								<i class="fa fa-usd icon" aria-hidden="true"></i>	
+							</div>
+							<div class="icon-surface"></div>
+						</div>
+						<div class=" widget-block-desc">
+								<h4 class="desc-title">Total Profit</h4>
+								<strong class="desc-amount">$ 14,840.4</strong>
+								<div class="widget-desc-footer"></div>
+						</div>
+					</div>
+				</div>
+		
+				<div class="block col21">
+					<div class="widget-block-panel col21-panel">
+						<div class="widget-block-icon">
+							<div class="icon-base col col21-icon">
+								<i class="fa fa-shopping-cart icon" aria-hidden="true"></i>
+							</div>
+							<div class="icon-surface"></div>
+						</div>
+						<div class=" widget-block-desc">
+								<h4 class="desc-title">Today's Orders</h4>
+								<strong class="desc-amount">40</strong>
+								<div class="widget-desc-footer"></div>
+						</div>
+					</div>
+				</div>
+				<div class="block col22">
+					<div class="widget-block-panel col22-panel">
+						<div class="widget-block-icon">
+							<div class="icon-base col22-icon">
+								<i class="fa fa-user icon" aria-hidden="true"></i>
+							</div>
+							<div class="icon-surface"></div>
+						</div>
+						<div class=" widget-block-desc">
+								<h4 class="desc-title">Today's Visitors</h4>
+								<strong class="desc-amount">3765</strong>
+								<div class="widget-desc-footer"></div>
+						</div>
+					</div>
+				</div>
 	</div>		
-</section>
+</section><!-- End right content screen -->
 </div>
 </table> 
 </div>

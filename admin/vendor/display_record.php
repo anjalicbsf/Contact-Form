@@ -1,11 +1,6 @@
-
 <link rel="stylesheet" href="../assests/css/style.css">
+<?php
 
-
- <?php
-
-
-// session_start();
 
     $dsn = 'mysql:host=127.0.0.1;dbname=contact_form'; 
     $username = 'root'; 
@@ -13,7 +8,6 @@
 
     try {
         $db = new PDO($dsn, $username, $pwd);
-
       //echo "connected";
     }
     catch (PDOException $e) {
@@ -22,38 +16,32 @@
         exit();
     }
 
-    $result = $db->query('SELECT * FROM contact_form_input');
-    $result->execute();
+    echo 
+    "<table class='record_table'>
+    <tr>
+    <th>ID</th>
+    <th>Name</th>
+    <th>Email</th>
+    <th>Contact_Number</th>
+    <th>Location</th>
+    </tr>"
+    ;
+    $sql = 'SELECT * FROM contact_form_input';
 
-     // $data = array();    
-     // $data=$result->fetch(PDO::FETCH_ASSOC);
+    foreach ($db->query($sql) as $row)
+    {
+    echo "<tr>";
+    echo "<td>" . $row['id'] . "</td>";
+    echo "<td>" . $row['Name'] . "</td>";
+    echo "<td>" . $row['Email'] . "</td>";
+    echo "<td>" . $row['Contact_number'] . "</td>";  
+    echo "<td>" . $row['Location'] . "</td>";
+    }
 
-
-     // while ($row = $result->fetch()) {
-     //        $data[] = array('id' => $row['id'], 'Name' => $row['Name'], 'Email' => $row['Email'], 'Contact_number'=> $row['Contact_number'],'Location'=> $row['Location'] );
-     //    }
-
-
-
-$rs=array();
-
-while ($row=$result->fetch(PDO::FETCH_ASSOC)) {
-    $row_array['id'] = $row['id'];
-    $row_array['Name'] = $row['Name'];
-    $row_array['Email'] = $row['Email'];
-      $row_array['Contact_number'] = $row['Contact_number'];
-        $row_array['Location'] = $row['Location'];
-
-
-    array_push($rs,$row_array);
-}
-
-echo json_encode($rs);
-    //    $_SESSION['table_array'] = $data;
-    // header("Location: admin_home_page.php");
- 
-    ?>
+  echo "</tr>";
+  echo "</table>";
+  echo "</div>";
 
 
       
-   
+    
