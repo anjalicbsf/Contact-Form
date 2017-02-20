@@ -132,6 +132,7 @@
 .dropdown-menu-open {
     display: block;
 }
+
 .userbox.open .dropdown-menu {
     border: none;
     /* box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
@@ -150,6 +151,15 @@
     font-family: fontawesome;
     font-size: inherit;
     text-rendering: auto;
+}
+.view-button {
+    background-color: transparent;
+    border: transparent;
+    color: #526f72;
+    font-size: 14px;
+    display: inline-block;
+ 
+    margin-right: 31%;
 }
 .dropdown-menu .divider {
     height: 1px;
@@ -311,9 +321,11 @@ li {
     display: block;
 }
 .view-table {
-    width: 100%;
-    height: 100%;
-    background-color: #e6e0e0;
+    width: 463px;
+    min-height: -24px;
+    background-color: #fff9f9;
+    display: inline-block;
+    margin-top: 47px;
 }
 .nav.nav-children li:hover {
     background-color: #171717;
@@ -322,9 +334,9 @@ li {
 .fa-table:before {
     content: "\f0ce";
 }
-.nav-main li.nav-parent.nav-expanded > a:after {
+/*.nav-main li.nav-parent.nav-expanded > a:after {
     content: '\f106';
-}
+}*/
 .nav-main li.nav-parent > a:after {
     font-family: 'FontAwesome';
     content: '\f107';

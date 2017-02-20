@@ -7,9 +7,9 @@ $(document).ready(function(){
 
 
 
-$(document).ready(function(){
-    $(".nav-parent").click(function(){
-        $(".nav-parent.nav-children").toggleClass(".nav-expanded");
-    });
-});
+// $(document).ready(function(){
+//     $(".nav-parent").click(function(){
+//         $(".nav-parent.nav-children").toggleClass(".nav-expanded");
+//     });
+// });
 

@@ -25,21 +25,14 @@
 	<!-- 	CSS -->
 	<link rel="stylesheet" href="../assests/css/style_dashboard.css">
 	<link rel="stylesheet" href="../assests/font-awesome/css/font-awesome.min.css">
-	<script type="text/javascript">
-        function returnwasset(){
-        	console.log("hello");
-            alert('return sent');
-            $.ajax({
-                type: "POST",
-                url: "display_record.php",
-               
-                 //or HTML, JSON, etc.
-                success: function(response){
-                    alert(response);
-                    //echo what the server sent back...
-                }
-            });
-        }
+	<script>
+
+	$(document).ready(function(){
+    $(".nav-parent").click(function(){
+        $(".nav-children").toggleClass("nav-expanded");
+    								});
+		});
+
     </script>
 
 </head>
@@ -71,7 +64,7 @@
 							<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
 						</li>
 						<li>
-							<a role="menuitem" tabindex="-1" href="#"><i class="fa fa-power-off"></i> Logout</a>
+							<a role="menuitem" tabindex="-1" href="../index.php"><i class="fa fa-power-off"></i> Logout</a>
 						</li>
 				</ul>
 		</div>
@@ -103,9 +96,9 @@
 						</a>
 						<ul class="nav nav-children">
 						 	<!-- <a href="#" onclick="loadDoc();"> -->
-								<li>
-								     View
-								     <button onclick="returnwasset()"> click here</button>
+								  <li><button onclick="loadDoc()" class="view-button">
+								 
+								    View</button>
 
 								</li>
 						 <!-- 	</a>  -->
@@ -133,7 +126,7 @@
 	<div class="view-table" id="view-table">
 	
 	</div>
-	<div class="widget-summary-box">
+	<div class="widget-summary-box" id="widget-summary-box">
 	
 				<div class="block col11">
 					<div class="widget-block-panel col11-panel">
