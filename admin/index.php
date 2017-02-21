@@ -33,11 +33,11 @@
              <div class="heading">Admin Login Form</div>
          </div>
          <div class="login-pannel">
-             <form name="form" method="POST" action="" class="login-form">
+             <form name="form" method="POST" action="vendor/admin-login-validation.php" class="login-form">
                     <div class="form-group">
                         <div class="col-12">
                             <div class="form-material floating">
-                                <input id="admin-username" class="form-control" type="text"  name="admin-username">
+                                <input id="admin-username" class="form-control" type="text"  name="admin_username">
                                 <label for="admin-username">Username</label>
                             </div>
                         </div>
@@ -45,13 +45,13 @@
                      <div class="form-group">
                         <div class="col-22">
                             <div class="form-material floating">
-                                <input type="Password" id="admin-password" class="form-control"   name="admin-password">
+                                <input type="Password" id="admin-password" class="form-control"   name="admin_password">
                                 <label for="admin-password">Password</label>
                             </div>
                         </div>
                     </div>
                     <div class="submit-box">
-                        <input  type="button"  class="form-submit" value="Log In" name="submit" >
+                        <input  type="submit" value="Log In" name="submit" >
                     </div>
                 
                 <!-- <div class="Username-box">

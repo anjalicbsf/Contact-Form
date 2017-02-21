@@ -1,11 +1,13 @@
 <?php 
 
-echo "in admin login validation";
+if(isset($_POST['submit'])) {
+
 	require 'databse-connection.php';  
-	$user= $_POST['val'];
-	$pass=$_POST['val2'];
-  echo $user;
-  echo $pass;
+
+	$user= $_POST['admin_username'];
+	$pass=$_POST['admin_password'];
+
+}
 
  $sql = 'SELECT * FROM admin_user_input WHERE username="'.$user.'"'; 
  // $sql = 'SELECT * FROM admin_user_input WHERE username="'.$user.'" AND pass="'.$pass.'"';
@@ -14,7 +16,8 @@ if($row = $result->fetch(PDO::FETCH_ASSOC)){
                      
                        // require 'admin_home_page.php'; 
                         echo "matched";
-                       include 'admin_home_page.php';
+                       // include 'admin_home_page.php';
+                       header('Location: admin_home_page.php');
                        echo "matched";
                          
                         } else
