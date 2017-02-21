@@ -1,23 +1,27 @@
-function validate() {
-    console.log('validate ');
+$( document ).ready(function() {
+	
+
+	$('.form-submit').click(SignIn);
 
 
-    var vusername = document.getElementById('admin-username').value;
-    var vpassword = document.getElementById('admin-password').value
-    console.log="in validate";
-
-
-   
- 		if ( vusername == "anjali" && vpassword == "anjalic"){
-			
-			return true;
-		
-			}else{
-				document.getElementById("err_field").innerHTML = "*Incorrect username or password";
-		
-			return false;}
-		
-		}	
-			
-
-			
+ function SignIn() { 
+ 	 console.log('validate ');
+			var adusername= $('#admin-username').val(); 
+			var adpass= $('#admin-password').val();	
+			//  console.log(adusername);
+			// console.log(adpass);    	
+		$.ajax({		  
+				type: 'post',
+				url: 'vendor/admin-login-validation.php',
+				data : {val:adusername,val2:adpass},
+					success: function(data) {
+					       // console.log(data);
+					    
+					    },
+					    error: function(data) {
+					       // console.log('error');
+					    },
+					});
+       		}
+                   
+});		  
