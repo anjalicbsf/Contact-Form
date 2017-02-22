@@ -1,3 +1,7 @@
+<?php
+session_start();
+ // echo session_id();
+?>
 <!DOCTYPE html>
 <html>
 
@@ -15,6 +19,9 @@
 
     <!-- javascript -->
     <script type="text/javascript" src="include/admin_validation.js"></script>
+  <!--   <script type="text/javascript" src="include/admin_dash_menu.js"></script> -->
+
+
 
 </head>
 <body class="wrap">
@@ -36,8 +43,8 @@
              <form name="form" method="POST" action="vendor/admin-login-validation.php" class="login-form">
                     <div class="form-group">
                         <div class="col-12">
-                            <div class="form-material floating">
-                                <input id="admin-username" class="form-control" type="text"  name="admin_username">
+                            <div class="form-material floating" id="form-material">
+                                <input id="admin-username" class="form-control" type="text"  name="admin_username" onblur="check_content(this)">
                                 <label for="admin-username">Username</label>
                             </div>
                         </div>
@@ -45,13 +52,22 @@
                      <div class="form-group">
                         <div class="col-22">
                             <div class="form-material floating">
-                                <input type="Password" id="admin-password" class="form-control"   name="admin_password">
+                                <input type="Password" id="admin-password" class="form-control"   name="admin_password" onblur="check_content(this)">
                                 <label for="admin-password">Password</label>
                             </div>
                         </div>
                     </div>
                     <div class="submit-box">
                         <input  type="submit" value="Log In" name="submit" >
+                    </div>
+                     <div class="error_msg">
+                        <?php
+                        if(isset($_SESSION['admin_success'])){
+                            $msg=$_SESSION['admin_success'];
+                            echo $_SESSION['admin_success'];
+                            }
+                            session_destroy();
+                        ?>
                     </div>
                 
                 <!-- <div class="Username-box">
@@ -70,13 +86,15 @@
          </div>
          
          </div>
+
+         <div class="bottom-bar">
+            <div class="text-block">New User?</div>
+             <div class="signup-link"><a href="vendor/sign-up.php">Sign up</a></div>
          </div>
+         </div>
+
          <!-- Login screen end -->
-         <!-- <div class="bottom-bar">
-            <div class="text-block">New User? 
-                 <div class="signup-link"><a href="vendor/sign-up.php">Sign up</a></div>here
-            </div>
-         </div> -->
+         
      
        <!--  <div class="login_screen col-2">
 			<div class="heading">
@@ -88,7 +106,7 @@
                    
                     <tr>
                         <td><div class="error_msg">
-                            <div id="err_field"></div>
+                            <div id="err_msg"></div>
                             </div>
                         </td>
                         </td>

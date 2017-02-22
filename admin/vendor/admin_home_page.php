@@ -1,11 +1,16 @@
-<!-- 
 <?php
-// session_start();
-// echo "hello out";
-
-?> -->
-
-
+ session_start();
+ // echo session_id();
+ echo "in";
+ if (!(session_id()==$_SESSION['dumy_id'])) {
+ 	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
+ 	return ;
+ 	echo session_id();
+ 	
+ }
+// echo session_id();
+ echo "out";
+?> 
 <!DOCTYPE html>
 <html>
 <head>
@@ -49,7 +54,17 @@
 				<img src="../assests/images/user-icon-girl.jpg" alt="user profile photo" class="image-circle">
 			</figure>
 			<div class="profile-info">
-				<span class="name">Anjali Chavan</span>
+				
+				<span class="name">
+				<?php
+                        if(isset($_SESSION['admin_fullname'])){
+                             // $admin_name=$_SESSION['admin_fullname'];
+                            echo $_SESSION['admin_fullname'];
+                            }
+                            session_destroy();
+                ?>
+                	
+                </span>
 				<span class="role">administrator</span>
 			</div>
 			<i class="fa custom-caret" id="dropdown-sign"></i>
@@ -64,7 +79,7 @@
 							<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
 						</li>
 						<li>
-							<a role="menuitem" tabindex="-1" href="../index.php"><i class="fa fa-power-off"></i> Logout</a>
+							<a role="menuitem" tabindex="-1" href="clearing-session.php"><i class="fa fa-power-off"></i> Logout</a>
 						</li>
 				</ul>
 		</div>

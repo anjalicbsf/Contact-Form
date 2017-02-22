@@ -1,1 +1,4 @@
-<?php echo "Welcome!!!!!"; ?>
+<?php
+session_start();
+ echo session_id();
+  echo "Welcome!!!!!"; ?>

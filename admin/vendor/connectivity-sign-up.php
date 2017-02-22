@@ -1,61 +1,52 @@
 <?php
+    session_start();
+    require 'databse-connection.php'; 
 
-    //  global $db;
-    // $dsn = 'mysql:host=127.0.0.1;dbname=contact_form'; 
-    // $username = 'root'; 
-    // $pwd=''; 
-
-    // try {
-    //     $db = new PDO($dsn, $username, $pwd);
-    //   echo "connected";
-    // }
-    // catch (PDOException $e) {
-    //     $error_message = $e->getMessage();
-    //     echo "this is displayed because an error was found";
-    //     exit();
-    // }
-    require 'databse-connection.php';    
     if(isset($_POST['submit'])){
                       SignUp(); 
-                     echo "in submit";
-                  }
+    }
 
-    function NewUser() { 
+    function NewUser(){ 
         global $db;
         $fullname = $_POST['name']; 
         $userName = $_POST['user']; 
         $email = $_POST['email']; 
-        $password = $_POST['pass']; 
-        $query = "INSERT INTO admin_user_input (fullname,username,email,pass) VALUES ('$fullname','$userName','$email',md5('$password')";
+        $get_password = $_POST['pass']; 
+        $set_password=md5($get_password);
+        echo $set_password;
+        $query = "INSERT INTO admin_user_input (fullname,username,email,pass) VALUES ('" . $fullname . "','" . $userName . "','" . $email . "','" . $set_password . "')";
         $result=$db->query($query);
-       
-        // $data = ($result->execute()) or die(errorInfo()); 
-        if( $result) { 
-            echo "YOUR REGISTRATION IS COMPLETED..."; 
+        if( $result) {
+                $_SESSION['signup_msg'] = "<span class='admin_signup_msg'>YOUR REGISTRATION IS COMPLETED!</span>"; 
+                header("Location: http://localhost/anjali/Contact-Form/admin/vendor/sign-up.php");
+             
+
         } 
-    }
+    }   
 
 
-    function SignUp() { 
+    function SignUp(){ 
         global $db;
         echo "in signup";
-        if(!empty($_POST['user'])){
-                echo "checkkkk";
-                    $sql="SELECT * FROM admin_user_input WHERE username = '$_POST[user]' AND pass = '$_POST[pass]'";
-                    $result = $db->query($sql);
-                    // $result->execute();
 
-                   
-                    // or die($db->errorInfo())
-                     if(!$row = $result->fetch(PDO::FETCH_ASSOC)){
-                        echo "newuser";
-                         newuser();
-                        } else
-                        { 
-                            echo "...YOU ARE ALREADY REGISTERED USER...";
-                        } 
-                    } 
-                }
+        if(!empty($_POST['user'])){
+                $get_new_password=$_POST['pass']; 
+                $set_new_password=md5($get_new_password);
+
+                $sql="SELECT * FROM admin_user_input WHERE username = '".$_POST[user]."' AND pass = '".$set_new_password."'";
+                $result = $db->query($sql);
+                if(!$row = $result->fetch(PDO::FETCH_ASSOC)){
+                    echo "newuser";
+                    newuser();
+                } else{ 
+                    $_SESSION['signup_msg'] = "<span class='signup_warning'>*YOU ARE ALREADY A REGISTERED USER!</span>";
+                    header("Location: http://localhost/anjali/Contact-Form/admin/vendor/sign-up.php");
+                  } 
+        }else{
+            $_SESSION['signup_msg'] = "<span class='signup_warning'>*FIELDS CAN NOT BE EMPTY!</span>";
+            header("Location: http://localhost/anjali/Contact-Form/admin/vendor/sign-up.php");
+        }
+    }
                      
 
 
