@@ -8,12 +8,12 @@ Description
 A Simple Contact Form that allows student to enter their details.
 Details will be saved in MySql database.
 Admin can view all recorded data after successfull login.
+Session is used to authenticate admin sign in 
 
 
 
 Requirements
 PHP >=5.4
 
-How to use?
 
 
