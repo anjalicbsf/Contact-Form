@@ -17,7 +17,9 @@
     }
 
     echo 
-    "<table class='record_table'>
+
+    "<div class='table_parent'>
+    <table class='record_table'>
     <tr>
     <th>ID</th>
     <th>Name</th>

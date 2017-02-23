@@ -36,7 +36,7 @@ session_start();
                
         <div class="signup-screen">
             <div class="title-container">
-                <div class="heading">New User Login Form</div>
+                <div class="heading">New User Sign Up</div>
             </div>
             <div class="login-pannel">
                 <table border="0" class="signup-table">
@@ -46,52 +46,66 @@ session_start();
                         <td>
                             <input type="text" name="name" id="name">
                         </td>
+                    </tr>
+                    <tr>
                         <td class="error_msg">
                             <div id="fname"></div>
                             <div id="ename"></div>
-                        </td>
+                        </td>  
                     </tr>
                     <tr>
                         <td>Email</td>
                         <td>
                             <input type="text" name="email" id="email">
                         </td>
-                        <td class="error_msg">
+                    </tr>
+                    <tr>
+                      <td class="error_msg">
                             <div id="femail"></div>
-                        </td>
+                        </td>  
                     </tr>
                     <tr>
                         <td>UserName</td>
                         <td>
                             <input type="text" name="user" id="user">
                         </td>
-                        <td class="error_msg">
+                        
+                    </tr>
+                    <tr>
+                       <td class="error_msg">
                             <div id="fuser"></div>
-                        </td>
+                        </td> 
                     </tr>
                     <tr>
                         <td>Password</td>
                         <td>
                             <input type="password" name="pass" id="pass">
                         </td>
-                        <td class="error_msg">
+                        
+                    </tr>
+                    <tr>
+                       <td class="error_msg">
                             <div id="fpass"></div>
-                        </td>
+                        </td> 
                     </tr>
                     <tr>
                         <td>Confirm Password </td>
                         <td>
                             <input type="password" name="cpass" id="cpass">
-                        </td>
-                        <td class="error_msg">
+                        </td>   
+                    <tr>
+                       <td class="error_msg">
                             <div id="fcpass"></div>
                             <div id="passtest"></div>
 
                         </td>
+                    </tr> 
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input id="button" type="submit" name="submit" value="Sign-Up" onclick="return(validate());">
+                            <div class="signup-button">
+                                <input id="button" type="submit" name="submit" value="Sign-Up" onclick="return(validate());">
+                            </div>    
                         </td>
                     </tr>
                     </form>

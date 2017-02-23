@@ -16,19 +16,20 @@ function validate() {
     if (vname == "")    {     
         errorFlag = true;
         // console.log('vaname');
-        errorMsg = "*Enter first and last name!";
+        errorMsg = "*Enter the name!";
         document.getElementById("fname").innerHTML = errorMsg;
         //console.log(errorMsg);
         return false;
-	}else if(!nameRegex.test(vname)){
-        errorFlag = true;
-        console.log('here');
-        errorMsg = "*Enter first and last name!";
-        document.getElementById("ename").innerHTML = errorMsg;
-        return false;
-}
+    }
+// 	}else if(!nameRegex.test(vname)){
+//         errorFlag = true;
+//         console.log('here');
+//         errorMsg = "*Enter first and last name!";
+//         document.getElementById("fname").innerHTML = errorMsg;
+//         return false;
+// }
     document.getElementById("fname").innerHTML = "";
-    document.getElementById("ename").innerHTML = "";
+    // document.getElementById("ename").innerHTML = "";
    
 
            

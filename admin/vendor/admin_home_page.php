@@ -2,31 +2,13 @@
  session_start();
  if (!(isset($_SESSION['test_id']))) {
 	 	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
-	 	// echo "in";
 	}
- // echo "in";
- // if (!(session_id()==$_SESSION['dumy_id'])) {
- // 	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
- // 	return ;
- // 	echo session_id();
- // }
 	 	
  // }
 	// if (!((isset($_SESSION['test_id']))AND(isset($_SESSION['admin_fullname'])))) {
 	//  	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
 	//  	echo "in";
 	// }
-
-	// sessionTimeOut();
-	// echo "out";
-	// function sessionTimeOut() {
-	// 	if ($_SESSION['timeout'] + 10 > time()) {	
- //  		$_SESSION['timeout'] = time();
-	// 	} else {	
-	// 		header('Location:http://localhost/anjali/Contact-Form/admin/vendor/log-out.php');
-	// 	   }
-	// 	}
-
 ?> 
 <!DOCTYPE html>
 <html>

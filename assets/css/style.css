@@ -76,8 +76,11 @@ body {
     width: 89px;
     border-radius: 9px;
     float: center;
-    smargin-left: 44%;
+   /* margin-left: 44%;*/
 
+}
+#index_submit {
+    text-align: right;
 }
 .success_msg {
     color: #ffffff;

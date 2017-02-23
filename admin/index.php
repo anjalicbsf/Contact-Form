@@ -37,7 +37,7 @@
         <div class="admin-screen-parent">
         <div class="login-screen">
          <div class="title-container">
-             <div class="heading">Admin Login Form</div>
+             <div class="heading">Admin Login </div>
          </div>
          <div class="login-pannel">
              <form name="form" method="POST" action="vendor/admin-login-validation.php" class="login-form">
@@ -66,9 +66,9 @@
                         </div>
                     </div> -->
                     <div class="submit-box">
-                        <input  type="submit" value="Log In" name="submit" >
+                        <input  type="submit" value="Sign in" name="submit" >
                     </div>
-                     <div class="error_msg">
+                     <div class=" signin_error_msg ">
                         <?php
                         if(isset($_SESSION['admin_success'])){
                             $msg=$_SESSION['admin_success'];
