@@ -1,6 +1,5 @@
 <?php
-session_start();
- // echo session_id();
+    session_start();
 ?>
 <!DOCTYPE html>
 <html>
@@ -20,6 +19,7 @@ session_start();
     <!-- javascript -->
     <script type="text/javascript" src="include/admin_validation.js"></script>
   <!--   <script type="text/javascript" src="include/admin_dash_menu.js"></script> -->
+  
 
 
 
@@ -43,7 +43,7 @@ session_start();
              <form name="form" method="POST" action="vendor/admin-login-validation.php" class="login-form">
                     <div class="form-group">
                         <div class="col-12">
-                            <div class="form-material floating" id="form-material">
+                            <div class="form-material floating" id="form-material_user">
                                 <input id="admin-username" class="form-control" type="text"  name="admin_username" onblur="check_content(this)">
                                 <label for="admin-username">Username</label>
                             </div>
@@ -51,12 +51,20 @@ session_start();
                     </div>
                      <div class="form-group">
                         <div class="col-22">
+                            <div class="form-material floating" id="form-material_pass">
+                                <input id="admin-password" class="form-control" type="Password"  name="admin_password" onblur="check_content(this)">
+                                <label for="admin-password">Password</label>
+                            </div>
+                        </div>
+                    </div>
+                    <!--  <div class="form-group">
+                        <div class="col-22">
                             <div class="form-material floating">
                                 <input type="Password" id="admin-password" class="form-control"   name="admin_password" onblur="check_content(this)">
                                 <label for="admin-password">Password</label>
                             </div>
                         </div>
-                    </div>
+                    </div> -->
                     <div class="submit-box">
                         <input  type="submit" value="Log In" name="submit" >
                     </div>
@@ -66,7 +74,7 @@ session_start();
                             $msg=$_SESSION['admin_success'];
                             echo $_SESSION['admin_success'];
                             }
-                            session_destroy();
+                            unset($_SESSION['admin_success']);
                         ?>
                     </div>
                 

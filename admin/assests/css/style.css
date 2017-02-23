@@ -8,9 +8,11 @@
     background-size: cover;
     background-repeat: no-repeat;*/
     /*background-image: linear-gradient(to top right,#eaeaea 10%, rgb(193, 167, 255) 65%, #ff1919 125%);*/
-    min-height: 622px;
+    min-height: 539px;
     background-image: linear-gradient(to top right,#eacccc 10%, rgb(218, 206, 243) 65%, #f19494 125%);
+    padding-top: 79px;
 }
+
 .col-2{
 
 
@@ -53,7 +55,7 @@
     /* padding: 37px; */
    /* border-radius: 10px;*/
    box-shadow: 0px 0px 5px;
-    margin-top: 108px;
+   /* margin-top: 108px;*/
 /* margin-top: 108px; */
   
 }
@@ -196,16 +198,40 @@ label:focus {
     background-image: linear-gradient(to top right, #796363 10%, #d8aeae 65%, #ef6b11 125%);
 }
 .error_msg {
+    position: absolute;
+    color: #ea0606;
     font-size: 12px;
-    font-family: monospace;
-    color: #ef1717;
-    text-align: center;
+    transform: translate(2px, 12px);
+    border: none;
 }
 .admin_signup_msg {
     color: green;
     font-size: 14px;
     font-weight: 500;
     margin-left: 39%;
+}
+.go-signin a {
+    text-decoration: none;
+    padding: 6px;
+    border: 1px solid;
+    border-radius: 6px;
+    background-color: #8c73ca;
+    border-color: rgb(42, 34, 64);
+    box-shadow: 2px 2px 3px;
+    color: #060606;
+    font-family: sans-serif;
+    font-size: 14px;
+}
+.go-signin {
+    text-align: center;
+    margin-top: 37px;
+    margin-left: 19%;
+}
+
+.signup_msg {
+    margin-bottom: 13px;
+    /* padding-bottom: 14px; */
+    /* margin-top: -21px; */
 }
 .signup_warning {
     color: red;

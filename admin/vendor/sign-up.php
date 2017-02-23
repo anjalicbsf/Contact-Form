@@ -9,6 +9,7 @@ session_start();
 
     <link rel="stylesheet" href="../assests/css/style.css">
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+    <script type="text/javascript" src="../include/admin_signup_validate.js"></script>
 
 </head>
 
@@ -26,11 +27,13 @@ session_start();
                     if(isset($_SESSION['signup_msg'])){
                         $msg=$_SESSION['signup_msg'];
                         echo $_SESSION['signup_msg'];
-                    }
-                        session_destroy();
+                        // echo "<a href='../index.php'>Sign in</a> ";
+                    }   
+                        
+                        unset($_SESSION['signup_msg']);
                 ?>
         </div>
-                
+               
         <div class="signup-screen">
             <div class="title-container">
                 <div class="heading">New User Login Form</div>
@@ -41,43 +44,64 @@ session_start();
                         <form method="POST" action="connectivity-sign-up.php">
                         <td>Name</td>
                         <td>
-                            <input type="text" name="name">
+                            <input type="text" name="name" id="name">
+                        </td>
+                        <td class="error_msg">
+                            <div id="fname"></div>
+                            <div id="ename"></div>
                         </td>
                     </tr>
                     <tr>
                         <td>Email</td>
                         <td>
-                            <input type="text" name="email">
+                            <input type="text" name="email" id="email">
+                        </td>
+                        <td class="error_msg">
+                            <div id="femail"></div>
                         </td>
                     </tr>
                     <tr>
                         <td>UserName</td>
                         <td>
-                            <input type="text" name="user">
+                            <input type="text" name="user" id="user">
+                        </td>
+                        <td class="error_msg">
+                            <div id="fuser"></div>
                         </td>
                     </tr>
                     <tr>
                         <td>Password</td>
                         <td>
-                            <input type="password" name="pass">
+                            <input type="password" name="pass" id="pass">
+                        </td>
+                        <td class="error_msg">
+                            <div id="fpass"></div>
                         </td>
                     </tr>
                     <tr>
                         <td>Confirm Password </td>
                         <td>
-                            <input type="password" name="cpass">
+                            <input type="password" name="cpass" id="cpass">
+                        </td>
+                        <td class="error_msg">
+                            <div id="fcpass"></div>
+                            <div id="passtest"></div>
+
                         </td>
                     </tr>
                     <tr>
                         <td colspan="2">
-                            <input id="button" type="submit" name="submit" value="Sign-Up">
+                            <input id="button" type="submit" name="submit" value="Sign-Up" onclick="return(validate());">
                         </td>
                     </tr>
                     </form>
                 </table>
-
-
             </div>
+        </div>
+        <div class="go-signin">
+            <a href='../index.php'>Sign in</a>
+        </div>
+
 </body>
 
 </html>

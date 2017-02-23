@@ -1,15 +1,32 @@
 <?php
  session_start();
- // echo session_id();
- echo "in";
- if (!(session_id()==$_SESSION['dumy_id'])) {
- 	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
- 	return ;
- 	echo session_id();
- 	
- }
-// echo session_id();
- echo "out";
+ if (!(isset($_SESSION['test_id']))) {
+	 	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
+	 	// echo "in";
+	}
+ // echo "in";
+ // if (!(session_id()==$_SESSION['dumy_id'])) {
+ // 	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
+ // 	return ;
+ // 	echo session_id();
+ // }
+	 	
+ // }
+	// if (!((isset($_SESSION['test_id']))AND(isset($_SESSION['admin_fullname'])))) {
+	//  	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
+	//  	echo "in";
+	// }
+
+	// sessionTimeOut();
+	// echo "out";
+	// function sessionTimeOut() {
+	// 	if ($_SESSION['timeout'] + 10 > time()) {	
+ //  		$_SESSION['timeout'] = time();
+	// 	} else {	
+	// 		header('Location:http://localhost/anjali/Contact-Form/admin/vendor/log-out.php');
+	// 	   }
+	// 	}
+
 ?> 
 <!DOCTYPE html>
 <html>
@@ -58,13 +75,11 @@
 				<span class="name">
 				<?php
                         if(isset($_SESSION['admin_fullname'])){
-                             // $admin_name=$_SESSION['admin_fullname'];
-                            echo $_SESSION['admin_fullname'];
-                            }
-                            session_destroy();
+							$admin_name=$_SESSION['admin_fullname'];
+                         	echo $admin_name;
+                         }      
                 ?>
-                	
-                </span>
+               	</span>
 				<span class="role">administrator</span>
 			</div>
 			<i class="fa custom-caret" id="dropdown-sign"></i>
@@ -79,7 +94,7 @@
 							<a role="menuitem" tabindex="-1" href="#" data-lock-screen="true"><i class="fa fa-lock"></i> Lock Screen</a>
 						</li>
 						<li>
-							<a role="menuitem" tabindex="-1" href="clearing-session.php"><i class="fa fa-power-off"></i> Logout</a>
+							<a role="menuitem" tabindex="-1" href="log-out.php"><i class="fa fa-power-off"></i> Logout</a>
 						</li>
 				</ul>
 		</div>

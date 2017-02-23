@@ -1,22 +1,31 @@
 function check_content(field){
             console.log('in js');
-            // var d = document.getElementById("admin-username");
-            
-            var form_class=  document.getElementById("form-material");
-            form_class.className = "form-material floating";
+            console.log(field.name);
 
-            if (field.value == '') {
-                // console.log("in destination");
-                form_class.className = "form-material floating";
-            }else{ 
-                        // var temp=d.className;
-                        // var temp2=s.className;
-                        // console.log(temp);
-                        // console.log(temp2);
+            if (field.name=="admin_username"){
+            	var form_class=  document.getElementById("form-material_user");
+            	form_class.className = "form-material floating";
+            	if (field.value == '') {
+                	form_class.className = "form-material floating";
+            	}else{ 
                         form_class.className += "label";
                         var temp2=form_class.className;
-                      console.log(temp2);
-                }
+                      	console.log(temp2);
+                      }
+
+            }else{
+            	if (field.name=="admin_password") {
+            		var form_class=  document.getElementById("form-material_pass");
+            		form_class.className = "form-material floating";
+					if (field.value == ''){
+                		form_class.className = "form-material floating";
+           			}else{ 
+	                        form_class.className += "label";
+	                        var temp2=form_class.className;
+	                      	console.log(temp2);
+                        }
+            	}
+            }
 }
 
 
@@ -40,4 +49,6 @@ $( document ).ready(function() {
 					    // },
 		});
     }
-});		  
+});	
+
+	  

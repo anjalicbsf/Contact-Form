@@ -10,20 +10,18 @@ if(isset($_POST['submit'])) {
 $sql = 'SELECT * FROM admin_user_input WHERE username="'.$user.'" AND pass="'.$pass.'"';
 $result = $db->query($sql);
     if($row = $result->fetch(PDO::FETCH_ASSOC)){
-        // require 'admin_home_page.php'; 
-        foreach ($db->query($sql) as $r){
+          foreach ($db->query($sql) as $r){
           $admin_fullname= $r['fullname'];
-          // echo $admin_fullname;
-        }
-        $test_id="o30jam6peehrkor6mh83tis3u1";
-        $_SESSION['admin_fullname'] =$admin_fullname;
-        $_SESSION['dumy_id']=$test_id;
-        header("Location: http://localhost/anjali/Contact-Form/admin/vendor/admin_home_page.php");
-    }else{ 
-          $_SESSION['admin_success'] = "<span class='admin_err_msg'>*Username or password is incorrect!</span>";
-          header("Location: http://localhost/anjali/Contact-Form/admin/");
-    } 
-                     
+          }
+          // $test_id="o30jam6peehrkor6mh83tis3u1";
+          $_SESSION['admin_fullname'] =$admin_fullname;
+          $_SESSION['test_id']=session_id();
+          header("Location: http://localhost/anjali/Contact-Form/admin/vendor/admin_home_page.php");
+      }else{ 
+            $_SESSION['admin_success'] = "<span class='admin_err_msg'>*Username or password is incorrect!</span>";
+            header("Location: http://localhost/anjali/Contact-Form/admin/");
+      } 
+                       
                 
                      
      

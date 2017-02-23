@@ -29,21 +29,25 @@ body {
     background-color: white;
     position: absolute;
     top: 25%;
-    right: 10%;
+    right: 21%;
     transform: translate(0, -50px);
- width: 30%;
+    /* width: 30%; */
     text-align: center;
     border-radius: 22px;
 }
 .wrap h3 {
-    color: rgba(183, 160, 160, 0.67);
+    color: rgb(140, 77, 77);
 }
 .table_css {
    
-    padding: 10% 20% 10% 20%;
+/*    padding: 10% 20% 10% 20%;*/
     background-color: #d7ded1;
     border-radius: 22px;
     color: #a57070;
+    width: 100%;
+    padding: 12px;
+    font-size: 16px;
+    font-weight: 600;
 }
  .error_msg {
     width: 30%;
@@ -61,19 +65,19 @@ body {
 .table_css input[type="text"] {
     border: 1px solid rgba(197, 153, 153, 0.74);
     border-radius: 5px;
-    padding: 4%;
+  /*  padding: 4%;*/
+    height: 25px;
 }
 .table_css input[type="submit"] {
     background: #618c11;
     color: white;
     border-color: #ffffff;
-    height: 38px;
-    width: 100px;
-    font-family: 'Abel', sans-serif;
-    text-align: -webkit-center;
+    height: 29px;
+    width: 89px;
     border-radius: 9px;
     float: center;
-    transform: translate(107px, 24px);
+    smargin-left: 44%;
+
 }
 .success_msg {
     color: #ffffff;
