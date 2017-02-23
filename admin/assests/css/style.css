@@ -74,9 +74,10 @@
 .login-pannel {
     margin: 0 auto;
     padding: 20px 20px 1px;
-    max-width: 100%;
+    /*max-width: 100%;*/
     overflow-x: visible;
     transition: opacity .2s ease-out;
+    width: 258px;
 }
 .form-material {
     position: relative;
@@ -130,11 +131,8 @@ label {
 }
 .col-12,.col-22 {
     width: 100%;
-    /* float: left; */
     position: relative;
-   /* padding-left: 15px;
-    padding-right: 15px;*/
-    /* min-height: 16px; */
+   
 }
 /*form-material>label, .form-material.floating>.form-control:focus+label, .form-material.floating.open>label {*/
 /*.form-material>*/.form-control:focus+label, /*.form-material*/ label {    
@@ -177,7 +175,7 @@ label:focus {
 }
 .admin-screen-parent {
     margin: auto;
-    width: 241px;
+    width: 299px;
 }
 .submit-box {
     /* margin: 0 auto; */
@@ -224,13 +222,13 @@ label:focus {
     color: #fff;
     text-shadow: 0 1px rgba(0,0,0,0.3);
     background-color: #357ae8;
-    padding: 7px 24px;
+    padding: 7px 16px;
     /* width: 26%; */
 }
 .go-signin {
     text-align: center;
     margin-top: 37px;
-    margin-left: 19%;
+    margin-left: 22%;
 }
 
 .signup_msg {
@@ -252,8 +250,8 @@ label:focus {
 }
 .bottom-bar {
     margin-top: 16px;
-margin-left: 61px;
     font-size: 14px;
+    text-align: center;
 
 }
 .signup-link {
@@ -326,32 +324,12 @@ input[type="submit"] {
     width: 26%;
   
 }
-input[type="text"],
-input[type="password"] {
-    /* background-color: rgba(186, 163, 39, 0.41); */
-    /*
-    border-bottom: 2px solid #2b7108;
-    border-radius: 2px;
-    color: #263238;
-    font-size: 18px;
-    font-weight: 400;
-    padding: 15px 12px;
-    display: block;
-    width: 90%;
-    max-width: 300px;
-    margin: 10px auto;
-    font-family: initial;*/
-     /*      padding: 12px 30px;
-    width: 265px;
-    margin: 14px auto*/
-}
+
 .admin_home_page_heading {
     font-size: 30px;
     text-align: left;
     font-weight: bold;
     color: rgb(255, 250, 250);
-    /* background-color: #3a3030; */
-    
     padding: 1%;
     background-image: linear-gradient(to top right, #3a3030 10%, #b57e7e 65%, #f3eae5 125%);
 }
