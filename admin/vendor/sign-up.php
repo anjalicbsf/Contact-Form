@@ -7,8 +7,13 @@ session_start();
 <head>
     <title>Sign up form</title>
 
+    <!-- Style css -->
     <link rel="stylesheet" href="../assests/css/style.css">
+
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
+
+    <!-- Javascript -->
     <script type="text/javascript" src="../include/admin_signup_validate.js"></script>
 
 </head>
@@ -38,7 +43,7 @@ session_start();
             <div class="title-container">
                 <div class="heading">New User Sign Up</div>
             </div>
-            <div class="login-pannel">
+            <div class="signup-login-pannel">
                 <table border="0" class="signup-table">
                     <tr>
                         <form method="POST" action="connectivity-sign-up.php">
@@ -113,8 +118,9 @@ session_start();
             </div>
         </div>
         <div class="go-signin">
-            <a href='../index.php'>Sign in</a>
+                     Already a user?<a href='../index.php'>Sign in</a>
         </div>
+        
 
 </body>
 
