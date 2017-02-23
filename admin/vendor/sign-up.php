@@ -104,7 +104,7 @@ session_start();
                     <tr>
                         <td colspan="2">
                             <div class="signup-button">
-                                <input id="button" type="submit" name="submit" value="Sign-Up" onclick="return(validate());">
+                                <input id="button" type="submit" name="submit" value="Sign Up" onclick="return(validate());">
                             </div>    
                         </td>
                     </tr>
