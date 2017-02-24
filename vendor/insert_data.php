@@ -4,8 +4,6 @@
  $conact_no=$_POST["contact_number"];
  $varlocation=$_POST["location"];
 
-
-
 	$dsn = 'mysql:host=127.0.0.1;dbname=contact_form'; 
     $username = 'root'; 
     $pwd=''; 

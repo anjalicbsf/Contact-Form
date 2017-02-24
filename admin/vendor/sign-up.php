@@ -118,7 +118,7 @@ session_start();
             </div>
         </div>
         <div class="go-signin">
-                     Already a user?<a href='../index.php'>Sign in</a>
+                     <span>Already a user?  <a href='../index.php'>Sign in</a></span>
         </div>
         
 

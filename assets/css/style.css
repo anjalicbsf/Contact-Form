@@ -1,88 +1,93 @@
 body {
     font-family: 'Titillium Web', sans-serif;
-    background-image: url(form_img.png);
+    background-image: url(form_img2.png);
     background-repeat: no-repeat;
     background-size: cover;
 }
 .heading {
-    /* background-color: rgba(119, 0, 0, 0.2);
-    border-radius: 20px;
+    background-color: rgba(119, 0, 0, 0.2);
+   /* border-radius: 20px;
     position: absolute;
-    text-align: left;*/
-    position: relative;
+    text-align: left;
+    position: relative;*/
+    color: #e8f3ed;
 }
 .heading > h1 {
     position: absolute;
     transform: translate(259px, 212px);
-    color: wheat;
+  /*  color: #e8f3ed;*/
     font-size: 40px;
 }
 .heading > p {
     position: absolute;
     transform: translate(229px, 284px);
-    color: wheat;
+    /*color: wheat;*/
     opacity: 0.5;
 }
 .wrap {
     display: inline-block;
-    position: relative;
-    background-color: white;
-    position: absolute;
-    top: 25%;
-    right: 21%;
-    transform: translate(0, -50px);
-    /* width: 30%; */
     text-align: center;
     border-radius: 22px;
+    box-shadow: 2px 2px 4px rgba(0, 0, 0, 0.3);
+    width: 385px;
+    margin: 110px 0px 0px 49%;
+    background-color: #3abd72;
 }
 .wrap h3 {
     color: rgb(140, 77, 77);
+    color: #ffffff;
+    margin: 16px auto;
 }
 .table_css {
    
-/*    padding: 10% 20% 10% 20%;*/
-    background-color: #d7ded1;
+/*  padding: 10% 20% 10% 20%;*/
+    background-color: #ffffff;
     border-radius: 22px;
-    color: #a57070;
+    color: #646464;;
     width: 100%;
-    padding: 12px;
-    font-size: 16px;
-    font-weight: 600;
+    padding: 15px;
+    padding-top: 15px;
+    font-size: 18px;
+    font-weight: 500;
+    height: 320px;
 }
  .error_msg {
-    width: 30%;
+    /*width: 30%;*/
     position: absolute;
     color: #ea0606;
     font-size: 13px;
-    transform: translate(10px, 0px);
+    font-weight: bold;
+    transform: translate(157px, -16px);
 }
 .label {
-    color: #a57070;
+       color: rgba(0, 0, 0, 0.53);
 }
 .table_css td {
-    padding: 2%;
+    padding: 7px;
 }
 .table_css input[type="text"] {
-    border: 1px solid rgba(197, 153, 153, 0.74);
+    border: 1px solid #ccc;
     border-radius: 5px;
-  /*  padding: 4%;*/
     height: 25px;
+    width: 100%;
 }
 .table_css input[type="submit"] {
-    background: #618c11;
+    background: #3abd72;
     color: white;
-    border-color: #ffffff;
+    border-color: #46c37b;
     height: 29px;
-    width: 89px;
+    width: 112px;
     border-radius: 9px;
-    float: center;
-   /* margin-left: 44%;*/
-
+    box-shadow: 0px 2px 2px rgba(0, 0, 0, 0.3);
+    font-family: inherit;
+    cursor: pointer;
 }
 #index_submit {
+    display: table-cell;
     text-align: right;
 }
 .success_msg {
-    color: #ffffff;
-    padding-left: 65%;
+    color: #1d1b1b;
+    font-size: 14px;
+    text-align: center;
 }

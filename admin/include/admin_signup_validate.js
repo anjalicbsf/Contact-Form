@@ -79,7 +79,7 @@ function validate() {
         document.getElementById("fcpass").innerHTML = errorMsg;
         //console.log(errorMsg);
         return false;
-    }else if(!(vcpass==vpass)){
+    }else if(!(vcpass===vpass)){
         console.log("here");
         errorFlag = true;
         errorMsg = "*Password does not match!";

@@ -3,12 +3,6 @@
  if (!(isset($_SESSION['test_id']))) {
 	 	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
 	}
-	 	
- // }
-	// if (!((isset($_SESSION['test_id']))AND(isset($_SESSION['admin_fullname'])))) {
-	//  	header("Location: http://localhost/anjali/Contact-Form/admin/index.php");
-	//  	echo "in";
-	// }
 ?> 
 <!DOCTYPE html>
 <html>
@@ -20,6 +14,8 @@
 
 	<!-- Jquery -->
 	<script src="../assests/js/jquery-3.1.1.min.js"></script>
+	<script src="../assests/js/jquery-2.2.0.js"></script>
+	<script src="../assests/js/perfect-scrollbar.jquery.js"></script>
 
 	<!-- Javascript -->
 	<script type="text/javascript" src="../include/jquery-format.js"></script>
@@ -107,13 +103,18 @@
 							<span id="tables">Tables</span>
 						</a>
 						<ul class="nav nav-children">
-						 	<!-- <a href="#" onclick="loadDoc();"> -->
+						 	
 								  <li><button onclick="loadDoc()" class="view-button">
 								 
 								    View</button>
 
 								</li>
-						 <!-- 	</a>  -->
+								<li><button onclick="delete_record()" class="view-button">
+								 
+								    Delete</button>
+
+								</li>
+						
 
 						</ul>
 					</li>
@@ -138,7 +139,7 @@
 	<div class="view-table" id="view-table">
 	
 	</div>
-	<div class="widget-summary-box" id="widget-summary-box">
+	<div class="widget-summary-box table-del" id="widget-summary-box">
 	
 				<div class="block col11">
 					<div class="widget-block-panel col11-panel">

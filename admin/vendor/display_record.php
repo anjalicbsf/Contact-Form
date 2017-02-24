@@ -1,6 +1,10 @@
 <link rel="stylesheet" href="../assests/css/style.css">
-<?php
+<script src="../assests/js/jquery-2.2.0.js"></script>
+<script src="../assests/js/perfect-scrollbar.jquery.js"></script>
+<script type="text/javascript" src="../include/admin_dash_menu.js"></script>
+<script type="text/javascript" src="../assests/js/admin.js"></script>
 
+<?php
 
     $dsn = 'mysql:host=127.0.0.1;dbname=contact_form'; 
     $username = 'root'; 
@@ -19,6 +23,8 @@
     echo 
 
     "<div class='table_parent'>
+    <div class='ps-scrollbar-y-rail' tyle='top: 200px; height: 300px; right: 3px;'>
+    <div class='ps-scrollbar-y' tabindex='0' style='top: 83px; height: 125px;'>
     <table class='record_table'>
     <tr>
     <th>ID</th>
@@ -42,7 +48,9 @@
 
   echo "</tr>";
   echo "</table>";
-  echo "</div>";
+  echo "</div></div></div>";
+?>
+
 
 
       

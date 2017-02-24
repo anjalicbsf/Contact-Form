@@ -21,50 +21,6 @@ $result = $db->query($sql);
             $_SESSION['admin_success'] = "<span class='admin_err_msg'>*Username or password is incorrect!</span>";
             header("Location: http://localhost/anjali/Contact-Form/admin/");
       } 
-                       
-                
-                     
-     
-     // $result->execute();
-   //  $rs=array();
-   //  $rs=$result;
-   // print_r($result);
-   //      if($row = $result->fetch(PDO::FETCH_ASSOC)){
-   //            return true;
-   //            echo "true";
-
-   //          }else{ 
-   //                  return false;
-   //                  echo "false";
-   //                } 
-
- 
-// die();
- 
- // echo 
- //    "<table class='record_table'>
- //    <tr>
- //    <th>ID</th>
- //    <th>Name</th>
- //    <th>Email</th>
- //    <th>Contact_Number</th>
- //    <th>Location</th>
- //    </tr>"
- //    ;
-    
-
- //    foreach ($db->query($sql) as $row)
- //    {
- //    echo "<tr>";
- //    echo "<td>" . $row['ID'] . "</td>";
- //    echo "<td>" . $row['fullname'] . "</td>";
- //    echo "<td>" . $row['username'] . "</td>";
- //    echo "<td>" . $row['email'] . "</td>";  
- //    echo "<td>" . $row['pass'] . "</td>";
- //    }
-
- //  echo "</tr>";
- //  echo "</table>";
-   
+                      
                
                      

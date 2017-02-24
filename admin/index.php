@@ -19,10 +19,6 @@
     <!-- javascript -->
     <script type="text/javascript" src="include/admin_validation.js"></script>
   <!--   <script type="text/javascript" src="include/admin_dash_menu.js"></script> -->
-  
-
-
-
 </head>
 <body class="wrap">
 	<div class="sub-wrap">
@@ -35,11 +31,11 @@
     <!-- Header end -->
     <!-- Login screen strat -->
         <div class="admin-screen-parent">
+        <div class="login-screen">
         <div class="title-container">
              <div class="heading">Admin Login </div>
-         </div>
-        <div class="login-screen">
-         <div class="login-pannel">
+        </div>
+        <div class="login-pannel">
              <form name="form" method="POST" action="vendor/admin-login-validation.php" class="login-form">
                     <div class="form-group">
                         <div class="col-12">
