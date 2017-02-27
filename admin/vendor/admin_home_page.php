@@ -16,14 +16,19 @@
 	<script src="../assests/js/jquery-3.1.1.min.js"></script>
 	<script src="../assests/js/jquery-2.2.0.js"></script>
 	<script src="../assests/js/perfect-scrollbar.jquery.js"></script>
-
+	<script src="../assests/js/perfect-scrollbar.jquery.min.js"></script>
+	
 	<!-- Javascript -->
 	<script type="text/javascript" src="../include/jquery-format.js"></script>
 	<script type="text/javascript" src="../include/admin_dash_menu.js"></script>
 	<script src="../assests/js/admin.js"></script>
+	<script src="../assests/js/perfect-scrollbar.js"></script>
+	<script src="../assests/js/perfect-scrollbar.min.js"></script>
 
 	<!-- 	CSS -->
 	<link rel="stylesheet" href="../assests/css/style_dashboard.css">
+	<link rel="stylesheet" href="../assests/css/perfect-scrollbar.min.css">
+	<link rel="stylesheet" href="../assests/css/perfect-scrollbar.css">
 	<link rel="stylesheet" href="../assests/font-awesome/css/font-awesome.min.css">
 	<script>
 
@@ -112,6 +117,11 @@
 								<li><button onclick="delete_record()" class="view-button">
 								 
 								    Delete</button>
+
+								</li>
+								<li><button onclick="update_record()" class="view-button">
+								 
+								    Update</button>
 
 								</li>
 						

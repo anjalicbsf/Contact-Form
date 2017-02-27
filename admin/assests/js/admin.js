@@ -4,7 +4,9 @@ $(function() {
 	    	$(".dropdown-menu").toggleClass("dropdown-menu-open");
 	    });
 
-	    $('.table_parent').perfectScrollbar();
+	    // $('.table_parent').perfectScrollbar();
 	});
 });
+
+
 

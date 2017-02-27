@@ -47,9 +47,9 @@ session_start();
                 <table border="0" class="signup-table">
                     <tr>
                         <form method="POST" action="connectivity-sign-up.php">
-                        <td>Name</td>
+                        <!-- <td>Name</td> -->
                         <td>
-                            <input type="text" name="name" id="name">
+                            <input type="text" name="name" id="name" placeholder="Name">
                         </td>
                     </tr>
                     <tr>
@@ -59,20 +59,20 @@ session_start();
                         </td>  
                     </tr>
                     <tr>
-                        <td>Email</td>
+                        <!-- <td>Email</td> -->
                         <td>
-                            <input type="text" name="email" id="email">
+                            <input type="text" name="email" id="email" placeholder="Email">
                         </td>
                     </tr>
                     <tr>
-                      <td class="error_msg">
+                        <td class="error_msg">
                             <div id="femail"></div>
                         </td>  
                     </tr>
                     <tr>
-                        <td>UserName</td>
+                        <!-- <td>UserName</td> -->
                         <td>
-                            <input type="text" name="user" id="user">
+                            <input type="text" name="user" id="user" placeholder="Username">
                         </td>
                         
                     </tr>
@@ -82,9 +82,9 @@ session_start();
                         </td> 
                     </tr>
                     <tr>
-                        <td>Password</td>
+                       <!--  <td>Password</td> -->
                         <td>
-                            <input type="password" name="pass" id="pass">
+                            <input type="password" name="pass" id="pass" placeholder="Password">
                         </td>
                         
                     </tr>
@@ -94,17 +94,16 @@ session_start();
                         </td> 
                     </tr>
                     <tr>
-                        <td>Confirm Password </td>
+                       <!--  <td>Confirm Password </td> -->
                         <td>
-                            <input type="password" name="cpass" id="cpass">
-                        </td>   
+                            <input type="password" name="cpass" id="cpass" placeholder="Confirm Password">
+                        </td>  
+                    </tr>  
                     <tr>
-                       <td class="error_msg">
-                            <div id="fcpass"></div>
-                            <div id="passtest"></div>
-
-                        </td>
-                    </tr> 
+                        <td class="error_msg">
+                            <div id="fcpass">hello</div>
+                            <div id="test"></div>
+                        </td>  
                     </tr>
                     <tr>
                         <td colspan="2">

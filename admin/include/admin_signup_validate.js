@@ -73,24 +73,24 @@ function validate() {
     }
     document.getElementById("fpass").innerHTML = "";
 
-    if (vcpass == "")    {     
+
+    if ((vcpass == "")&&(!(vcpass===vpass))) {     
         errorFlag = true;
         errorMsg = "*Re enter the password!";
         document.getElementById("fcpass").innerHTML = errorMsg;
         //console.log(errorMsg);
         return false;
-    }else if(!(vcpass===vpass)){
-        console.log("here");
-        errorFlag = true;
-        errorMsg = "*Password does not match!";
-        document.getElementById("passtest").innerHTML = errorMsg;
-        // console.log(errorMsg);
     }
+    // }else if(!(vcpass===vpass)){
+    //     console.log("here");
+    //     errorFlag = true;
+    //     errorMsg = "*Password does not match!";
+    //     document.getElementById("fcpass").innerHTML = errorMsg;
+    //     console.log(errorMsg);
+    //     return false;
+    // }
+    // document.getElementById("fcpass").innerHTML = "";
     document.getElementById("fcpass").innerHTML = "";
-    document.getElementById("passtest").innerHTML = "";
-
-
-
 
 
 
