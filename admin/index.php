@@ -17,8 +17,7 @@
     <script src="assests/js/jquery-3.1.1.min.js"></script>
 
     <!-- javascript -->
-    <script type="text/javascript" src="include/admin_validation.js"></script>
-  <!--   <script type="text/javascript" src="include/admin_dash_menu.js"></script> -->
+    <script type="text/javascript" src="include/admin-validation.js"></script>
 </head>
 <body class="wrap">
 	<div class="sub-wrap">

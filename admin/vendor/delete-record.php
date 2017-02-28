@@ -1,6 +1,7 @@
 <link rel="stylesheet" href="../assests/css/style.css">
 <script src="../assests/js/jquery-2.2.0.js"></script>
 <script type="text/javascript" src="../assests/js/admin.js"></script>
+<script type="text/javascript" src="../include/admin-dash-menu.js"></script>
 <?php 
     require 'databse-connection.php'; 
     echo 

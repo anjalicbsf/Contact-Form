@@ -1,4 +1,4 @@
-<script type="text/javascript" src="http://localhost/anjali/Contact-Form/admin/include/admin_dash_menu.js"></script>
+<script type="text/javascript" src="http://localhost/anjali/Contact-Form/admin/include/admin-dash-menu.js"></script>
 <link rel="stylesheet" href="../assests/css/style.css">
 <?php
 	if(isset($_GET['update'])){

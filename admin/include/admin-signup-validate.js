@@ -34,7 +34,6 @@ function validate() {
         errorFlag = true;
         errorMsg = "*Enter the username!";
         document.getElementById("fuser").innerHTML = errorMsg;
-        //console.log(errorMsg);
         return false;
     }
     document.getElementById("fuser").innerHTML = "";
@@ -44,7 +43,6 @@ function validate() {
         errorFlag = true;
         errorMsg = "*Enter the password!";
         document.getElementById("fpass").innerHTML = errorMsg;
-        //console.log(errorMsg);
         return false;
     }
     document.getElementById("fpass").innerHTML = "";

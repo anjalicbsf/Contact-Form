@@ -15,7 +15,7 @@
         $result=$db->query($query);
         if( $result) {
                 $_SESSION['signup_msg'] = "<span class='admin_signup_msg'>YOUR REGISTRATION IS COMPLETED!</span>"; 
-                require '../assests/admin_send_mail.php';
+                require '../assests/admin-send-mail.php';
         } 
     }   
 

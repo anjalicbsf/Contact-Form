@@ -14,7 +14,7 @@ session_start();
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
 
     <!-- Javascript -->
-    <script type="text/javascript" src="../include/admin_signup_validate.js"></script>
+    <script type="text/javascript" src="../include/admin-signup-validate.js"></script>
 
 </head>
 

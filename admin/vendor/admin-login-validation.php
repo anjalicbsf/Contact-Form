@@ -14,7 +14,7 @@ session_start();
             }
             $_SESSION['admin_fullname'] =$admin_fullname;
             $_SESSION['test_id']=session_id();
-            header("Location: http://localhost/anjali/Contact-Form/admin/vendor/admin_home_page.php");
+            header("Location: http://localhost/anjali/Contact-Form/admin/vendor/admin-home-page.php");
         }else{ 
               $_SESSION['admin_success'] = "<span class='admin_err_msg'>*Username or password is incorrect!</span>";
               header("Location: http://localhost/anjali/Contact-Form/admin/");
