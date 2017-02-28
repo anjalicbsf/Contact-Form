@@ -101,7 +101,7 @@ session_start();
                     </tr>  
                     <tr>
                         <td class="error_msg">
-                            <div id="fcpass">hello</div>
+                            <div id="fcpass"></div>
                             <div id="test"></div>
                         </td>  
                     </tr>

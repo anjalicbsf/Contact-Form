@@ -4,8 +4,8 @@
 if(isset($_GET['update']))
 {
 	$updateID=$_GET['update'];
-	echo "hello";
-	echo $updateID;
+	// echo "hello";
+	// echo $updateID;
 	require 'databse-connection.php'; 
 	$sql_update = 'SELECT * FROM contact_form_input WHERE id="'.$updateID.'"';
 
