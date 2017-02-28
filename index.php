@@ -29,7 +29,7 @@
         <div class="wrap">
             <h3>Sign up now</h3>
             <table class="table_css">
-                <form name="form" action="vendor/send_mail.php" method="POST">
+                <form name="form" action="vendor/send-mail.php" method="POST">
                     <div id="myForm"></div>
                     <tr>
                         <td>

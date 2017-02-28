@@ -30,7 +30,7 @@
 	    echo 'Message could not be sent.';
 	    echo 'Mailer Error: ' . $mail->ErrorInfo;
 	} else {
-		require_once ('insert_data.php');
+		require_once ('insert-data.php');
 		$_SESSION['success'] = "You have submitted details successfully!!!";
 		header("Location: http://localhost/anjali/Contact-Form");
 	   } 
