@@ -1,7 +1,4 @@
 function validate() {
-    console.log('validate');
-
-
     var vname = document.getElementById("name").value;
     var vemail = document.getElementById("email").value;
     var vuser= document.getElementById("user").value;
@@ -12,13 +9,10 @@ function validate() {
     var errorFlag = false;
     var errorMsg = '';
 
-     
-    if (vname == "")    {     
+     if (vname == "")    {     
         errorFlag = true;
-        // console.log('vaname');
         errorMsg = "*Enter the name!";
         document.getElementById("fname").innerHTML = errorMsg;
-        //console.log(errorMsg);
         return false;
     }
     document.getElementById("fname").innerHTML = "";
@@ -28,17 +22,11 @@ function validate() {
         errorMsg = "*Enter the email!";
         document.getElementById("femail").innerHTML = errorMsg;
         return false;
-        //console.log(errorMsg);
-          
     } else if (!emailRegex.test(vemail)) {
-
         errorFlag = true;
         errorMsg = "*Enter the valid email!";
         document.getElementById("femail").innerHTML = errorMsg;
-        //console.log(errorMsg);
         return false;
-
-          
     }
     document.getElementById("femail").innerHTML = "";
 
@@ -62,29 +50,24 @@ function validate() {
     document.getElementById("fpass").innerHTML = "";
 
 
-    if ((vcpass == "")&&(!(vcpass===vpass))) {     
+   if (vcpass == "") {     
         errorFlag = true;
         errorMsg = "*Re enter the password!";
-        document.getElementById("test").innerHTML = errorMsg;
+        document.getElementById("fcpass").innerHTML = errorMsg;
         console.log(errorMsg);
         return false;
-    }  document.getElementById("test").innerHTML = "";
-    // }else if(!(vcpass===vpass)){
-    //     console.log("here");
-    //     errorFlag = true;
-    //     errorMsg = "*Password does not match!";
-    //     document.getElementById("fcpass").innerHTML = errorMsg;
-    //     console.log(errorMsg);
-    //     return false;
-    // }
-    // document.getElementById("fcpass").innerHTML = "";
+    }else if(vcpass !== vpass){
+        console.log("here");
+        errorFlag = true;
+        errorMsg = "*Password does not match!";
+        document.getElementById("fcpass").innerHTML = errorMsg;
+        console.log(errorMsg);
+        return false;
+    }else{
+    document.getElementById("fcpass").innerHTML = "";
+    }
   
-
-
-
     if (errorFlag) {
-
-        //console.log(errorMsg);
         return false;
     }
     
