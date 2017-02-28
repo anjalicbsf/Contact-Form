@@ -232,10 +232,6 @@ label:focus {
     margin-top: 28px;
     margin: 0 auto;
     display: block;
-    /*background-color: #55ACEE;
-    width: 426px;
-    height: 27px;;
-    box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);*/
     color: black;
 }
 .go-signin p {
@@ -309,7 +305,7 @@ input[type="submit"] {
 .table_css td {
     padding: 2%;
 } 
-td ::-webkit-input-placeholder { /* Chrome/Opera/Safari */
+td ::-webkit-input-placeholder { 
   color: black;
 }
 .table_css{

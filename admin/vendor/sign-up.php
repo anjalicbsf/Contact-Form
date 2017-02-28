@@ -32,7 +32,6 @@ session_start();
                     if(isset($_SESSION['signup_msg'])){
                         $msg=$_SESSION['signup_msg'];
                         echo $_SESSION['signup_msg'];
-                        // echo "<a href='../index.php'>Sign in</a> ";
                     }   
                         
                         unset($_SESSION['signup_msg']);
