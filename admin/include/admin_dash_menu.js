@@ -1,38 +1,24 @@
-// jQuery( document ).on( 'load', function() {
-//  var windowurl = window.location.href;
-//  if(0) {
-//    var xhttp = new XMLHttpRequest();
-//    xhttp.open("GET", "../vendor/display_record.php", true);
-//  }
-// } );
-$(function() {
-    $(document).ready(function() {
-        $("#update_submit").click(function() {
-            console.log('in func');
-            var formDetails = $('form[name=updateform]').serialize();
-            $.ajax({
-                url: '../vendor/update_function.php',
-                type: 'POST',
-                data: {
-                    Name: $('form[name=updateform] input[name=Name]').val(),
-                    Email: $('form[name=updateform] input[name=Email]').val(),
-                    Contact_number: $('form[name=updateform] input[name=Contact_number]').val(),
-                    Location: $('form[name=updateform] input[name=Location]').val()
-                },
-
-                success: function(response) {
-                    alert(response.status);
-                },
-                error: function() {
-                    alert("error");
-                }
-            });
-        });
+function updateFormClick() {
+    console.log('in func');
+    var formDetails = $('form[name=updateform]').serialize();
+    console.log(formDetails); //return;
+    $.ajax({
+        url: 'http://localhost/anjali/Contact-Form/admin/vendor/update_function.php',
+        type: 'POST',
+        data: formDetails,
+        success: function(response) {
+            // alert(response);
+            response = jQuery.parseJSON(response);
+            // alert(response.status);
+            if (response.status) {
+                update_record();
+            }
+        },
+        error: function() {
+            alert("error");
+        }
     });
-});
-
-
-
+}
 
 function loadDoc() {
 
@@ -58,19 +44,16 @@ function deleteUser(userID) {
         $.post('../vendor/delete_function.php', {
             user_id: userID
         }, function test() {
-
             $('.widget-summary-box').load(document.URL + ' .widget-summary-box');
             delete_record();
-
-        });
-
+            });
     } else {
         console.log('dont delete it');
     }
 }
 
 function delete_record() {
-   var xhttp = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("widget-summary-box").innerHTML =
@@ -84,7 +67,7 @@ function delete_record() {
 }
 
 function update_record() {
-  var xhttp = new XMLHttpRequest();
+    var xhttp = new XMLHttpRequest();
     xhttp.onreadystatechange = function() {
         if (this.readyState == 4 && this.status == 200) {
             document.getElementById("widget-summary-box").innerHTML =
@@ -98,20 +81,6 @@ function update_record() {
     xhttp.send();
 }
 
-
-function show_update() {
-    console.log('Record updated successfully');
-    // $.get('admin_home_page.php', function(data) {
-    //     eval(data);
-    // });
-
-    // $('.widget-summary-box').load(document.URL + ' .widget-summary-box');
-    // update_record();
-
-}
-
-
-
 function updateUser(userID) {
     $row11 = userID;
     console.log($row11);
@@ -122,20 +91,12 @@ function updateUser(userID) {
                 this.responseText;
         }
     };
-    xhttp.open("GET", "../vendor/update_user.php?update="+$row11, true);
+    xhttp.open("GET", "../vendor/update_user.php?update=" + $row11, true);
     xhttp.send();
 }
 
-// function updateFunc(){
-//   $row11=userID;
-// console.log($row11);
-//  var xhttp = new XMLHttpRequest();
-//   xhttp.onreadystatechange = function() {
-//     if (this.readyState == 4 && this.status == 200) {
-//         document.getElementById("widget-summary-box").innerHTML =
-//         this.responseText;
-//     }
-//   };
-//   xhttp.open("GET", "../vendor/update_user.php?update=" + encodeURI( $row11 ), true);
-//   xhttp.send();
-// }
+function updateFunc(name_test) {
+    console.log('in updateFunc');
+    $varname = name_test;
+    console.log($varname);
+}

@@ -21,18 +21,8 @@ function validate() {
         //console.log(errorMsg);
         return false;
     }
-// 	}else if(!nameRegex.test(vname)){
-//         errorFlag = true;
-//         console.log('here');
-//         errorMsg = "*Enter first and last name!";
-//         document.getElementById("fname").innerHTML = errorMsg;
-//         return false;
-// }
     document.getElementById("fname").innerHTML = "";
-    // document.getElementById("ename").innerHTML = "";
-   
 
-           
     if (vemail == "")  {
         errorFlag = true;
         errorMsg = "*Enter the email!";
@@ -51,8 +41,6 @@ function validate() {
           
     }
     document.getElementById("femail").innerHTML = "";
-
-
 
     if (vuser == "")    {     
         errorFlag = true;
@@ -77,10 +65,10 @@ function validate() {
     if ((vcpass == "")&&(!(vcpass===vpass))) {     
         errorFlag = true;
         errorMsg = "*Re enter the password!";
-        document.getElementById("fcpass").innerHTML = errorMsg;
-        //console.log(errorMsg);
+        document.getElementById("test").innerHTML = errorMsg;
+        console.log(errorMsg);
         return false;
-    }
+    }  document.getElementById("test").innerHTML = "";
     // }else if(!(vcpass===vpass)){
     //     console.log("here");
     //     errorFlag = true;
@@ -90,7 +78,7 @@ function validate() {
     //     return false;
     // }
     // document.getElementById("fcpass").innerHTML = "";
-    document.getElementById("fcpass").innerHTML = "";
+  
 
 
 
@@ -99,5 +87,6 @@ function validate() {
         //console.log(errorMsg);
         return false;
     }
-    return true;     
+    
 }
+
