@@ -48,7 +48,7 @@ session_start();
                     <tr>
                         <form method="POST" action="connectivity-sign-up.php">
                         <td>
-                            <input type="text" name="name" id="name" placeholder="Name">
+                            <input type="text" name="name" id="name" placeholder="Name" >
                         </td>
                     </tr>
                     <tr>
@@ -112,7 +112,7 @@ session_start();
             </div>
         </div>
         <div class="go-signin">
-                     <span>Already a user?  <a href='../index.php'>Sign in</a></span>
+                     <p>Already a user?  <a href='../index.php'>Sign in</a></p>
         </div>
 </body>
 

@@ -71,3 +71,16 @@ function validate() {
     
 }
 
+// function check_content(field){
+//     if (field.name=="name"){
+//         var form_class=  document.getElementById("form-material_user");
+//         form_class.className = "form-material floating";
+//         if (field.value == '') {
+//             form_class.className = "form-material floating";
+//         }else{ 
+//             form_class.className += "label";
+//             var temp2=form_class.className;
+//             console.log(temp2);
+//           }
+//     }
+// }
