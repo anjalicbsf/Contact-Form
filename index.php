@@ -16,7 +16,7 @@
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
 
     <!-- Javascript -->
-    <script type="text/javascript" src="include/form_valid.js"></script>
+    <script type="text/javascript" src="include/form-valid.js"></script>
 
 </head>
 <body>
