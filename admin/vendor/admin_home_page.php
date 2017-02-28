@@ -30,16 +30,7 @@
 	<link rel="stylesheet" href="../assests/css/perfect-scrollbar.min.css">
 	<link rel="stylesheet" href="../assests/css/perfect-scrollbar.css">
 	<link rel="stylesheet" href="../assests/font-awesome/css/font-awesome.min.css">
-	<script>
-
-	$(document).ready(function(){
-    $(".nav-parent").click(function(){
-        $(".nav-children").toggleClass("nav-expanded");
-    								});
-		});
-
-    </script>
-
+	
 </head>
 <body>
 <div class="wrap">

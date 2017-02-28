@@ -53,14 +53,6 @@
                             </div>
                         </div>
                     </div>
-                    <!--  <div class="form-group">
-                        <div class="col-22">
-                            <div class="form-material floating">
-                                <input type="Password" id="admin-password" class="form-control"   name="admin_password" onblur="check_content(this)">
-                                <label for="admin-password">Password</label>
-                            </div>
-                        </div>
-                    </div> -->
                     <div class="submit-box">
                         <input  type="submit" value="Sign in" name="submit" >
                     </div>
@@ -73,19 +65,6 @@
                             unset($_SESSION['admin_success']);
                         ?>
                     </div>
-                
-                <!-- <div class="Username-box">
-                    <input type="text"  id="admin-username" name="admin" placeholder="Username" size=20>
-                    
-                </div> -->
-               <!--  <div class="Password-box">
-                    <input type="Password" id="admin-password" name="admin-password" placeholder="Password" size="20">
-                     
-                </div>
-                <div class="submit-box">
-                    <input  type="button"  class="form-submit" value="Log In" name="submit" >
-                </div>
-                <div id="err_field"></div> -->
             </form>
          </div>
          
@@ -99,54 +78,6 @@
 
          <!-- Login screen end -->
          
-     
-       <!--  <div class="login_screen col-2">
-			<div class="heading">
-                <h1>Admin Login Form</h1>
-            </div>
-
-             <table class="table_css">
-                <form name="form" method="POST" action="vendor/admin_home_page.php">
-                   
-                    <tr>
-                        <td><div class="error_msg">
-                            <div id="err_msg"></div>
-                            </div>
-                        </td>
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <input type="text" name="admin_username" placeholder="Username" size=20>
-                        </td>
-
-                    </tr>
-                     <tr>
-                        <td>
-                            <label>Password</label>
-                        </td>
-                    </tr> -->
-                   <!--  <tr>
-                        <td>
-                            <input type="Password" name="admin_password" placeholder="Password" size="20">
-                        </td>
-                    </tr>
-                    <tr>
-                        <td>
-                            <div class="submit_button">
-                                <input  type="submit"  value="Log In" name="submit" onclick="return (validate())">
-                            </div>
-                        </td>
-
-                     </tr>
-
-
- 
-
-            </table>
-
-            </form>
-         </div> --> 
     </div> 
 </body>
 

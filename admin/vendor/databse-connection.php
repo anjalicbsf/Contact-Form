@@ -6,7 +6,6 @@
 
     try {
         $db = new PDO($dsn, $username, $pwd);
-       // echo "connected";
     }
     catch (PDOException $e) {
         $error_message = $e->getMessage();

@@ -4,17 +4,25 @@
 <html>
 <head>
     <title>Home page</title>
+
+    <!-- Style css -->
     <link rel="stylesheet" type="text/css" href="./assets/css/style.css">
+
+    <!-- Font -->
     <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Titillium+Web" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Anton" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Fira+Sans+Extra+Condensed" rel="stylesheet">
     <link href="https://fonts.googleapis.com/css?family=Abel" rel="stylesheet">
+
+    <!-- Javascript -->
     <script type="text/javascript" src="include/form_valid.js"></script>
+
 </head>
 <body>
     <div class="wrap_parent">
-        <div class="heading">
+    <!-- Form starts here -->
+        <div class="heading"> 
             <h1>Sign up form</h1>
             <p> Fill all fields with valid details and submit.</p>
         </div>
@@ -99,6 +107,7 @@
             </table>
         </div>
         </form>
+        <!-- Form ends here -->
     </div>    
 </body>
 </html>

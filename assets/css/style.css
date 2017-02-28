@@ -6,22 +6,16 @@ body {
 }
 .heading {
     background-color: rgba(119, 0, 0, 0.2);
-   /* border-radius: 20px;
-    position: absolute;
-    text-align: left;
-    position: relative;*/
     color: #e8f3ed;
 }
 .heading > h1 {
     position: absolute;
     transform: translate(259px, 212px);
-  /*  color: #e8f3ed;*/
     font-size: 40px;
 }
 .heading > p {
     position: absolute;
     transform: translate(229px, 284px);
-    /*color: wheat;*/
     opacity: 0.5;
 }
 .wrap {
@@ -39,8 +33,6 @@ body {
     margin: 16px auto;
 }
 .table_css {
-   
-/*  padding: 10% 20% 10% 20%;*/
     background-color: #ffffff;
     border-radius: 22px;
     color: #646464;;
@@ -52,7 +44,6 @@ body {
     height: 320px;
 }
  .error_msg {
-    /*width: 30%;*/
     position: absolute;
     color: #ea0606;
     font-size: 13px;

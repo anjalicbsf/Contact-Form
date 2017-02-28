@@ -1,12 +1,6 @@
-.wrap {
-   
-}
 .sub-wrap {
-
     font-family: "Open Sans", Arial, sans-serif;
-    /* background-image: linear-gradient(to top right,#eaeaea 10%, rgb(193, 167, 255) 65%, #ff1919 125%); */
     min-height: 539px;
-    /* background-image: linear-gradient(to top right,#eacccc 10%, rgb(218, 206, 243) 65%, #f19494 125%); */
     padding-top: 59px;
     background-color: #ffffff;
 }
@@ -19,7 +13,6 @@
     transform: translate3d(0,-1px,0);
 }
 .headbar{
-
     background-color: #e01b1b;
     height: 60px;
     left: 0;
@@ -27,8 +20,6 @@
     top: 0;
     background: #FFF;
     display: none;
-   /* border-bottom: 1px solid #E9E9E6;
-    border-top: 3px solid #EDEDED;*/
 }
 
 .logo-container {
@@ -43,16 +34,13 @@
 }
 .title-container {
     text-align: left;
-    /* background-color: #8c73ca; */
     padding: 15px 20px;
     background-color: #5c90d2;
-    
 }
 .login-screen {
     display: inline-block;
     box-shadow: 0px 0px 3px;
     background-color: #ffffff;
-    /* box-shadow: 0px 2px 2px rgb(180, 186, 195); */
     border-color: #357ae8;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
   
@@ -61,7 +49,6 @@
     margin: auto;
     width: 424px;
     background-color: #ffffff;
-    /* box-shadow: 0px 2px 2px rgb(180, 186, 195); */
     border-color: #357ae8;
     box-shadow: 0px 1px 1px rgba(0, 0, 0, 0.3);
 }
@@ -84,7 +71,6 @@
 .login-pannel {
     margin: 0 auto;
     padding: 20px 20px 1px;
-    /*max-width: 100%;*/
     overflow-x: visible;
     transition: opacity .2s ease-out;
     width: 258px;
@@ -144,8 +130,7 @@ label {
     position: relative;
    
 }
-/*form-material>label, .form-material.floating>.form-control:focus+label, .form-material.floating.open>label {*/
-/*.form-material>*/.form-control:focus+label, /*.form-material*/ label {    
+.form-control:focus+label, label {    
     position: absolute;
     top: 6px;
     left: 0;
@@ -188,9 +173,7 @@ label:focus {
     width: 299px;
 }
 .submit-box {
-    /* margin: 0 auto; */
     margin: 30px 0px 15px 0px;
-    /* padding-left: 66px; */
 }
 .admin_login_background {
     background-image: linear-gradient(to top right, #796363 10%, #d8aeae 65%, #ef6b11 125%);
@@ -223,15 +206,9 @@ label:focus {
     position: relative;
     overflow: auto;
     background-color: white;
-  /*  width: 400px;
-    height: 300px;
-    margin: 50px auto 0 auto;
-    position: relative;
-    overflow: auto;*/
 }
 .table_parent.table_del {
     width: 556px;
-    /*height: 300px;*/
 }
 .admin_signup_msg {
     color: green;
@@ -249,7 +226,6 @@ label:focus {
     text-shadow: 0 1px rgba(0,0,0,0.3);
     background-color: #5c90d2;
     padding: 7px 25px;
-    /* width: 26%; */
 }
 .go-signin {
     font-family: sans-serif;
@@ -261,8 +237,6 @@ label:focus {
 
 .signup_msg {
     margin-bottom: 13px;
-    /* padding-bottom: 14px; */
-    /* margin-top: -21px; */
 }
 .signup_warning {
     color: red;
@@ -283,11 +257,8 @@ label:focus {
 
 }
 .signup-link {
-   /* background-color: #705d9e;*/
     padding: 7px;
     border-radius: 4px;
-    /* margin-top: -7px; */
-    /* margin-bottom: 32%; */
     transform: translate(29px 30px);
     display: inline;
     color: black;
@@ -382,11 +353,7 @@ input[type="submit"] {
     cursor: pointer;
 }
 .admin_home_background {
-    /*background-image: url(https://images.pexels.com/photos/273016/pexels-photo-273016.jpeg?w=940&h=650&auto=compress&cs=tinysrgb);
-    background-repeat: no-repeat;
-    background-size: cover;*/
-    
-    background-color: #796363;
+   background-color: #796363;
 }
 .admin_display_table {
     padding: 3%;
@@ -397,10 +364,6 @@ input[type="submit"] {
     padding: 2%;
     color: #0b1d1d;
     font-family: monospace;
-    /* background-image: url(https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSJSzjjMcC5QRHAG-7DgbOJegiwwp0uItfgzCOHpDaNr1Y96BJ2); */
-    /* background-repeat: no-repeat; */
-    /* background-size: cover; */
-    
     border-bottom: 3px solid #1abfbf;
     background-color: #beecdd;
 }
@@ -427,7 +390,6 @@ input[type="submit"] {
 }
 
 #Email {
-    
     margin-left: 66px;
 }
 
@@ -440,10 +402,8 @@ input[type="submit"] {
 }
 #update_submit {
     padding: 4px 17px;
-    /* text-align: right; */
     color: black;
     background-color: white;
-    /* border: none; */
     margin-left: 209px;
     border: 1px solid #a9a9a9;
 }

@@ -3,9 +3,13 @@ $(function() {
 	    $("#userbox").click(function() {
 	    	$(".dropdown-menu").toggleClass("dropdown-menu-open");
 	    });
-
-	    // $('.table_parent').perfectScrollbar();
 	});
+});
+
+$(document).ready(function(){
+    $(".nav-parent").click(function(){
+        $(".nav-children").toggleClass("nav-expanded");
+    	});
 });
 
 

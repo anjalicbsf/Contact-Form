@@ -47,7 +47,6 @@ session_start();
                 <table border="0" class="signup-table">
                     <tr>
                         <form method="POST" action="connectivity-sign-up.php">
-                        <!-- <td>Name</td> -->
                         <td>
                             <input type="text" name="name" id="name" placeholder="Name">
                         </td>
@@ -59,7 +58,6 @@ session_start();
                         </td>  
                     </tr>
                     <tr>
-                        <!-- <td>Email</td> -->
                         <td>
                             <input type="text" name="email" id="email" placeholder="Email">
                         </td>
@@ -70,7 +68,6 @@ session_start();
                         </td>  
                     </tr>
                     <tr>
-                        <!-- <td>UserName</td> -->
                         <td>
                             <input type="text" name="user" id="user" placeholder="Username">
                         </td>
@@ -82,7 +79,6 @@ session_start();
                         </td> 
                     </tr>
                     <tr>
-                       <!--  <td>Password</td> -->
                         <td>
                             <input type="password" name="pass" id="pass" placeholder="Password">
                         </td>
@@ -94,7 +90,6 @@ session_start();
                         </td> 
                     </tr>
                     <tr>
-                       <!--  <td>Confirm Password </td> -->
                         <td>
                             <input type="password" name="cpass" id="cpass" placeholder="Confirm Password">
                         </td>  
@@ -119,8 +114,6 @@ session_start();
         <div class="go-signin">
                      <span>Already a user?  <a href='../index.php'>Sign in</a></span>
         </div>
-        
-
 </body>
 
 </html>

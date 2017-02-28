@@ -11,8 +11,6 @@
     display: inline-block;
 }
 .header {
-    /*position: absolute;*/
-    
     background-color: #e01b1b;
     height: 60px;
     left: 0;
@@ -89,12 +87,6 @@
 .image-circle {
     border-radius: 50%;
 }
-/*.userbox .custom-caret:before {
-    content: "\f107";
-}
-.fa.custom-caret:before {
-    content: "\f107";
-}*/
 
 .side_bar {
     background-color: #000000;
@@ -135,13 +127,6 @@
 
 .userbox.open .dropdown-menu {
     border: none;
-    /* box-shadow: 0 1px 2px 1px rgba(0, 0, 0, 0.2);
-    box-sizing: content-box;
-    left: -11px;
-    padding: 45px 10px 0;
-    top: -10px;
-    width: 100%;
-    z-index: 992;*/
 }
 .userbox.open .dropdown-menu li {
     margin-bottom: 5px;
@@ -195,12 +180,6 @@ li {
     text-decoration: none;
     background-color: transparent;
 }
-/*.nav > li > a {
-    position: relative;
-    display: block;
-    padding: 10px 15px;
-}*/
-
 #admin-data {
     background-color: #dadde4;
     width: 80%;
@@ -221,15 +200,9 @@ li {
 .sidebar-left {
     color: #777;
     display: table-cell;
-    /* position: relative; */
-    /* z-index: 1010; */
-    
     width: 20%;
     left: 0;
-    /* top: 56px; */
-    
     display: inline-block;
-    /* float: left; */
 }
 .content-blck {
     width: 100%;
@@ -286,8 +259,6 @@ li {
 .nav-main li i {
     width: 13px;
     margin-right: 8px;
-    /* text-align: center; */
-    
     vertical-align: initial;
     font-size: 16px;
 }
@@ -299,17 +270,6 @@ li {
     text-decoration: none;
     cursor: pointer;
 }
-/*.nav-main li .nav-children {
-      background: #191c21;
-    box-shadow: 0px -3px 3px -3px rgba(0, 0, 0, 0.7) inset;
-    
-    list-style-type: none;
-    padding: 0px 0;
-    text-align: center;
-     display: none;
-    
-    background-color: rgb(36, 41, 47);
-}*/
 .nav-children{
     list-style-type: none;
     padding: 0px 0;
@@ -335,9 +295,6 @@ li {
 .fa-table:before {
     content: "\f0ce";
 }
-/*.nav-main li.nav-parent.nav-expanded > a:after {
-    content: '\f106';
-}*/
 .nav-main li.nav-parent > a:after {
     font-family: 'FontAwesome';
     content: '\f107';
@@ -358,29 +315,13 @@ li {
     height: 100%;
     min-height: 580px;
     background-color: #e8e7e5;
-    /*display: table-cell;
-    padding: 40px;
-    position: relative;
-    vertical-align: top;
-    width: 80%;
-    padding-top: 83px;
-    min-height: 400px;
-    height: 100%;
-    background-color: #e4e3e0;*/
 }
 .page-header {
     background: #171717;
-    /* border-bottom: none; */
-    /* border-left: 1px solid #3A3A3A; */
-    /* box-shadow: 1px 3px 0 1px #CCCCCC; */
-    
     height: 50px;
-    /* z-index: 1001; */
-    
     margin: (24px 10px 13px 18px);
     position: relative;
     transform: translate(26px 19px);
-    /* top: 56px; */
 }
 .page-header h2 {
     color: #FFF;
@@ -443,18 +384,12 @@ li {
     width: calc(100% / 2 - 10px);
     margin: 5px;
     background-color: #fff;
-    /* padding: 54px 0; */
     position: relative;
-    /* text-align: center; */
     border-radius: 10px;
-    /* height: 108px; */
     min-height: 133px;
-    /*height: 100%;*/
-    /* margin-top: 0px; */
 }
 .widget-block-panel {
     min-height: 133px;
-    /*height: 100%;*/
 }
 .widget-block-icon {
     width: calc(100%/3);
@@ -532,249 +467,3 @@ li {
     width: 100%;
     margin-top: 31px;
 }
-/*.col11 {
-    position: absolute;
-    display: inline-block;
-    left: 0%;
-    min-height: 55%;
-    background-color: #efd3d3;
-    border-radius: 10px;
-    width: calc(100%/2 );
-}
-.col12 {
-    position: absolute;
-    display: inline-block;
-    left: 50%;
-    min-height: 55%;
-    background-color: #efd3d3;
-    border-radius: 10px;
-    width: calc(100%/2 );
-}
-.col21 {
-    position: absolute;
-    display: inline-block;
-    left: 0%;
-    top: 50%;
-    min-height: 55%;
-    background-color: #efd3d3;
-    border-radius: 10px;
-    width: calc(100%/2 );
-}
-.col22 {
-    position: absolute;
-    display: inline-block;
-    top: 50%;
-    left: 50%;
-    min-height: 55%;
-    background-color: #efd3d3;
-    border-radius: 10px;
-    width: calc(100%/2 );
-}
-*/
-/*.welcome_box {
-   
-    font-family: 'Slabo 27px', serif;
-    color: #a09292;
-    font-size: 15px;
-    background-color: #4c4545;
-    padding-left: 5%;
-}
-
-.menu_background {
-    background-color: #000000;
-    width: 100%;
-    
-}
-.menu_list p {
-    cursor: pointer;
-    padding-top: 3%;
-    background-color: rgb(146, 160, 167);
-    border-radius: 4px;
-    padding-left: 5%;
-}
-
-.sidenav {
-    z-index: 1;
-    background-color: #92a0a7;
-    overflow-x: hidden;
-    transition: 0.5s;
-    
-}
-
-.sidenav a {
-    text-decoration: none;
-    color: #100d0d;
-    display: block;
-    padding: 0px 0px 7px 49px;
-}
-.sidenav a:hover, .offcanvas a:focus{
-    color: #f1f1f1;
-}
-.sidenav .closebtn {
-    position: relative;
-    top: 7px;
-    left: 71%;
-}
-.content_area{
-    display: none;
-    background-color: #000000;
-}
-
-.content_area h3{
-   margin-left: 20%;
-    margin-top: 6px;
-    color: #ffffff;
-    border-bottom: 3px solid #2876d4;
-}
-*/
-/*.box-inside {
-    background-image: url(http://2.bp.blogspot.com/-OHWNg3QQwcc/VlHM1Di_PAI/AAAAAAAAGvU/MUMpy_5aM1w/s1600/CSS-social-media-icons-widget.png);
-    background-repeat: no-repeat;
-    height: 106%;
-    width: 100%;
-    margin: (10px, 10px 10px 10px);
-    transform: translate(54,-0);
-    position: absolute;
-    margin-left: 7%;
-    margin-top: 21%;
-}
-.social-media-box {
-    position: absolute;
-    display: inline-block;
-    right: 7%;
-    bottom: 7%;
-    width: 30%;
-    min-height: 55%;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-.dashboard {
-    background-color: black;
-}
-.economy-box {
-    position: absolute;
-    display: inline-block;
-  
-    left: 27%;
-    bottom: 7%;
-    width: 30%;
-    min-height: 55%;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-
-
-.dollar-section {
-    position: absolute;
-    display: inline-block;    
-    left: 3%;
-    bottom: 56%;
-    width: 94%;
-    min-height: 35%;
-    background-color: #f3eded;
-    border-radius: 10px;
-}
-
-.dollar-section-2 {
-    position: absolute;
-    display: inline-block;
-  
-    left: 3%;
-    bottom: 10%;
-    width: 94%;
-    min-height: 35%;
-    background-color: #f3eded;
-    border-radius: 10px;
-}
-
-.widget-summary-box {
-    position: absolute;
-    display: inline-block;
-   
-    left: 27%;
-    
-    top: 96%;
-    width: 67%;
-    min-height: 55%;
-    background-color: #ffffff;
-    border-radius: 10px;
-}
-.documents {
-    position: absolute;
-    display: inline-block;
- 
-    left: 3%;
-    bottom: 52%;
-    width: 46%;
-    min-height: 44%;
-    background-color: #f3eded;
-    border-radius: 10px;
-    border-left: 3px solid #0f8271;
-}
-.today-order {
-    position: absolute;
-    display: inline-block;
- 
-    left: 51%;
-    bottom: 52%;
-    width: 46%;
-    min-height: 44%;
-    background-color: #f3eded;
-    border-radius: 10px;
-    border-left: 3px solid #a2a68f;
-}
-.total-profit{
-    position: absolute;
-    display: inline-block;
-    left: 3%;
-    bottom: 4%;
-    width: 46%;
-   min-height: 44%;
-    background-color: #f3eded;
-    border-radius: 10px;
-}
-.messages {
-    position: absolute;
-    display: inline-block;
-   
-    left: 51%;
-    bottom: 4%;
-    width: 46%;
-    min-height: 44%;
-    background-color: #f3eded;
-    border-radius: 10px;
-}
-.doc-img {
-    position: absolute;
-    display: inline-block;
-    left: 2%;
-    bottom: 9%;
-    width: 30%;
-    min-height: 124px;
-    background-image: url(https://s-media-cache-ak0.pinimg.com/originals/23/4a/52/234a521417872ad8c72c395829dcf63f.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.order-img {
-    position: absolute;
-    display: inline-block;
-    left: 2%;
-    bottom: 9%;
-    width: 30%;
-    min-height: 124px;
-    background-image: url(http://icons.iconarchive.com/icons/graphicloads/100-flat/256/cart-icon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}
-.profit-img {
-    position: absolute;
-    display: inline-block;
-    left: 2%;
-    bottom: 9%;
-    width: 30%;
-    min-height: 124px;
-    background-image: url(http://icons.iconarchive.com/icons/graphicloads/100-flat/128/currency-icon.png);
-    background-repeat: no-repeat;
-    background-size: cover;
-}*/

@@ -1,9 +1,6 @@
 <?php
-
 		$pass="Milind@156";
-		// $mname= ( isset( $_POST["name"] ) ) ? $_POST["name"] : '';
 		$mname=$_POST['name'];
-		// $memail=(isset($_POST["email"])) ? $_POST["email"] : '';
 		$memail=$_POST['email']; 
 		require_once '../vendor/libs/PHPMailer/PHPMailerAutoload.php';
 
@@ -23,15 +20,12 @@
 
 
 		$mail->isHTML(true);  
-		//$bodyContent = 'This is the <b>simple email</b> sent from localhost using PHP ';
-		//$bodyContent='This file contains  <h3 style="color:red;">AUDI CAR</h3> image as attachment';
+
 		$bodyContent="Hello....$mname.<br>
 		You have signed up successfully!!!<br>
 		Have a nice day.";
 		$mail->Subject = 'Email from Localhost';
 		$mail->Body    = $bodyContent;
-
-		//$mail->addAttachment('C:\Users\vrunda\Desktop\audi.png'); 
 		if(!$mail->send()) {
 		    echo 'Message could not be sent.';
 		    echo 'Mailer Error: ' . $mail->ErrorInfo;
