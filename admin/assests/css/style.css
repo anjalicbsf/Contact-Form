@@ -217,8 +217,8 @@ label:focus {
     border: none;
 }
 .table_parent {
-    width: 434px;
-    height: 149px;
+    width: 487px;
+    height: 275px;
     margin: 50px auto 0 auto;
     position: relative;
     overflow: auto;
@@ -230,7 +230,8 @@ label:focus {
     overflow: auto;*/
 }
 .table_parent.table_del {
-    width: 512px;
+    width: 556px;
+    /*height: 300px;*/
 }
 .admin_signup_msg {
     color: green;
@@ -407,8 +408,11 @@ input[type="submit"] {
     background-color: rgba(166, 226, 223, 0.73);
 }
 .record_table th, td {
-   padding: 10px;
+    padding: 10px;
    border-bottom: 1px solid #efecec;
+}
+.record_table {
+    height: 185px;
 }
 .update_form {
     display: inline-block;
@@ -445,5 +449,5 @@ input[type="submit"] {
 }
 
 .table_parent.table_update {
-    width: 494px;
+       width: 554px;
 }
